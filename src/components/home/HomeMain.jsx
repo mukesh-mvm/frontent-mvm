@@ -1,11 +1,10 @@
 
 "use client"
-import React,{useState,useEffect} from 'react'
+import React,{useEffect} from 'react'
 
 import Clients from '../Clients'
 import Home from '../Home'
 import Hire from '../Hire'
-import Footer from '../Footer'
 import Result from '../Result'
 import Services from '../Services'
 import Work from '../Work'
@@ -22,7 +21,7 @@ import Work from '../Work'
               }
             });
           },
-          { threshold: 0.1 }
+          { threshold: 0.2 }
         );
     
         elements.forEach((el) => observer.observe(el));
@@ -53,9 +52,7 @@ import Work from '../Work'
       <div className="animate">
         <Hire />
       </div>
-      <div className="animate">
-        <Footer />
-      </div>
+    
     </>
   )
 }

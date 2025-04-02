@@ -34,11 +34,6 @@ html {
 
 
 
-
-/* himansu */
-
-
-
 .animate {
     opacity: 0;
     transform: translateY(30px);
@@ -65,8 +60,9 @@ html {
 .cont1 {
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 40%;
     gap: 15px;
+    margin-left: 6%;
 }
 
 .logo img {

@@ -1,7 +1,6 @@
 
 "use client"
 import { useEffect, useRef } from "react";
-import Navbar from "./Navbar";
 function Home() {
   const quoteRef = useRef(null);
 
@@ -36,7 +35,6 @@ function Home() {
   return (
     <div className="home">
       
-     <Navbar/>
       <div className="hero-container">
         <div className="hero-text">
           <h2 className="hero-head">

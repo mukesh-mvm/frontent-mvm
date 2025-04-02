@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Hire() {
     return (
       <div className="hire-container" id="contact-us">
@@ -7,7 +9,7 @@ function Hire() {
           acquisition to help you achieve your goals.
         </h2>
         
-        <button className="hire-button">Contact Us</button>
+       <Link href={"/contact"}><button className="hire-button">Contact Us</button></Link> 
       </div>
     );
   }

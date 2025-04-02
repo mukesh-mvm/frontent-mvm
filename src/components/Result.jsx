@@ -5,7 +5,6 @@ import { useEffect, useRef } from "react";
 
 function Result() {
   const quoteRef = useRef(null);
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -15,17 +14,16 @@ function Result() {
             words.forEach((word, index) => {
               setTimeout(() => {
                 word.classList.add("show");
-              }, index * 300); 
+              }, index * 700); 
             });
           } else {
-            // Hide words when scrolling out
-            entry.target.querySelectorAll(".word").forEach((word)=> {
+            entry.target.querySelectorAll(".word").forEach((word) => {
               word.classList.remove("show");
             });
           }
         });
       },
-      { threshold: 0.5 } // Trigger animation when 50% visible
+      { threshold: 0.5 } 
     );
 
     if (quoteRef.current) observer.observe(quoteRef.current);
@@ -34,6 +32,7 @@ function Result() {
       if (quoteRef.current) observer.unobserve(quoteRef.current);
     };
   }, []);
+
 
   return (
     <>
