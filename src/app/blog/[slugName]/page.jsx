@@ -171,5 +171,3 @@ Authorised card networks currently tie up with banks/non-banks for the issuance 
 };
 
 export default page;
-
-

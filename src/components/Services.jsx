@@ -38,12 +38,12 @@ function Services() {
     return (
         <div className="cont4" id="services">
             <center>
-                <h1 className="services-heading">Our Services</h1>
+                <h1 className="services-heading ">Our Services</h1>
             </center>
             <div className="services-grid">
                 {servicesData.map((service, index) => (
                     <div className="service-card" key={index}>
-                        <h3>{service.title}</h3>
+                        <h4>{service.title}</h4>
                         <p>{service.description}</p>
                     </div>
                 ))}

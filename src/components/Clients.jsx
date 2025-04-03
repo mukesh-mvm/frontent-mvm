@@ -9,8 +9,8 @@ function Clients() {
     ];
 
     return (
-        <div className="max-w-6xl mx-auto px-4">
-            <h1 className="text-4xl font-bold underline text-center mb-6">Our Clients</h1>
+        <div className="max-w-6xl mx-auto  px-4">
+            <h2 className="text-4xl font-bold underline text-center mb-6 py-5">Our Clients</h2>
             <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
                 {clientImages.map((image, index) => (
                     <div key={index} className="break-inside-avoid overflow-hidden rounded-lg shadow-md transition-transform duration-300 hover:scale-105">

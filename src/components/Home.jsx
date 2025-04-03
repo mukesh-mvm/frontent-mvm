@@ -9,7 +9,7 @@ function Home() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const words = entry.target.querySelectorAll(".word");
+          const words = entry.target.querySelectorAll(".word");
             words.forEach((word, index) => {
               setTimeout(() => {
                 word.classList.add("show");
@@ -37,9 +37,9 @@ function Home() {
       
       <div className="hero-container">
         <div className="hero-text">
-          <h2 className="hero-head">
+          <h1 className="hero-head">
           Driving exponential digital growth for your brand with our data & AI driven marketing strategies 
-          </h2>
+          </h1>
           <div className="quotefirst" ref={quoteRef}>
             <p>
               <span className="word">Strategy →</span>

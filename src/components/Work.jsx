@@ -2,7 +2,7 @@ function Work() {
     const workData = [
         {
             image: "/images/work1.png",
-            title: "Work 1",
+            title: "AI",
             view:"Meet Our Clients",
             description: "Just starting out? No problem! Strategea has helped over 20 SMEs with their marketing plan & growth."
         },
@@ -22,13 +22,13 @@ function Work() {
 
     return (
         <div className="work-container">
-            <h3 className="work-title">Our Work</h3>
+            <h2 className="work-title">Our Work</h2>
             <div className="work-grid">
                 {workData.map((work, index) => (
                     <div className="work-card" key={index}>
                         <img src={work.image} alt={work.title} className="work-image" />
                         <div className="work-text">
-                            <h5>{work.title}</h5>
+                            <h4>{work.title}</h4>
                             <p>{work.description}</p>
                             <button className="work-button">{work.view}</button>
                         </div>

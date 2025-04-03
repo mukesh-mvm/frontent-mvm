@@ -5,17 +5,18 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div>
+    <>
       <div className="header">
         <div className="cont1">
           <div className="logo">
             <img src="/images/logo.png" alt="MVM logo" />
           </div>
           <div className="heading">
-            <h4>
+            <h1>
               MVM <br /> Business <br /> Services
-            </h4>
+            </h1>
           </div>
         </div>
         <nav className="cont2">
@@ -24,7 +25,7 @@ const Navbar = () => {
               <Link href="/">HOME</Link>
             </li>
             <li>
-              <Link href="#services">SERVICES</Link>
+              <Link href="/">SERVICES</Link>
             </li>
             <li>
               <Link href="/blog">BLOG</Link>
@@ -49,7 +50,7 @@ const Navbar = () => {
                   <Link href="/">Home</Link>
                 </li>
                 <li className="hover:text-gray-300 transition duration-300">
-                  <Link href="#services">Services</Link>
+                  <Link href="/">Services</Link>
                 </li>
                 <li className="hover:text-gray-300 transition duration-300">
                   <Link href="/blog">Blog</Link>
@@ -62,7 +63,7 @@ const Navbar = () => {
           </div>
         </>
       )}
-    </div>
+    </>
   );
 };
 

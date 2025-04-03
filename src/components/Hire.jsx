@@ -1,18 +1,19 @@
 import Link from "next/link";
 
 function Hire() {
-    return (
-      <div className="hire-container" id="contact-us">
-        <h2>
-          Let’s come together and collaborate, crafting innovative marketing
-          strategies that will elevate your brand and drive remarkable customer
-          acquisition to help you achieve your goals.
-        </h2>
-        
-       <Link href={"/contact"}><button className="hire-button">Contact Us</button></Link> 
-      </div>
-    );
-  }
-  
-  export default Hire;
-  
+  return (
+    <div className="bg-gray-200 text-black text-center flex flex-col items-center justify-center h-screen px-4 md:px-12">
+      <p className="text-2xl sm:text-3xl md:text-5xl font-bold mb-6 w-[90%] sm:w-4/5 lg:w-3/5 text-center leading-snug">
+        Let’s collaborate and craft innovative marketing strategies to elevate
+        your brand and drive remarkable customer acquisition.
+      </p>
+      <Link href="/contact">
+        <button className="w-56 bg-gray-800 text-white text-lg px-6 py-3 rounded-md transition duration-300 mt-6 hover:bg-gray-700">
+          Contact Us
+        </button>
+      </Link>
+    </div>
+  );
+}
+
+export default Hire;
