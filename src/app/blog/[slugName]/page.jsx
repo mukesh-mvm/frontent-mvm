@@ -1,5 +1,9 @@
 import Article from "@/components/article/Article";
 
+export async function generateStaticParams() {
+  return [{ slugName: "new-blog-post" },{ slugName: "e-commerce" },{ slugName: "sugar-is-bitter" }];
+}
+
 const page = async ({ params }) => {
   const { slugName } = await params;
   const normalText = slugName?.replace(/-/g, " ");

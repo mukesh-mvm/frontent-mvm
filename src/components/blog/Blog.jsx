@@ -14,20 +14,6 @@ function Blog() {
     {
       image: "/images/blog.jpg",
       title: "Sugar is bitter",
-    },
-   
-    {
-      image: "/images/blog.jpg",
-      title: "travel Blog",
-    },
-   
-    {
-      image: "/images/work2.png",
-      title: "E-commerce",
-    },
-    {
-      image: "/images/work3.png",
-      title: "Automobile & Edtech",
     }
   ];
 

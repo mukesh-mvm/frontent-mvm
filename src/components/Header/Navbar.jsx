@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import Servicesdrop from "./Servicesdrop";
+import Services from "../Services/Services";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,7 +27,7 @@ const Navbar = () => {
               <Link href="/">HOME</Link>
             </li>
             <li>
-              <Link href="/">SERVICES</Link>
+             <Servicesdrop/>
             </li>
             <li>
               <Link href="/blog">BLOG</Link>
@@ -50,7 +52,7 @@ const Navbar = () => {
                   <Link href="/">Home</Link>
                 </li>
                 <li className="hover:text-gray-300 transition duration-300">
-                  <Link href="/">Services</Link>
+                  <Servicesdrop/>
                 </li>
                 <li className="hover:text-gray-300 transition duration-300">
                   <Link href="/blog">Blog</Link>
