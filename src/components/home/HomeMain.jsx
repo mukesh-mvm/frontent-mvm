@@ -7,7 +7,7 @@ import Home from '../Home'
 import Hire from '../Hire'
 import Result from '../Result'
 import Services from '../Services/Services'
-import Work from '../Work'
+import Work from '../Partners/Work'
 
  const HomeMain = () => {
     useEffect(() => {

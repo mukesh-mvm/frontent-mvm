@@ -2,7 +2,10 @@ import React from 'react'
 
 function ContentWriting() {
   return (
-    <div>ContentWriting</div>
+    <>
+    <div>Contenet Writing</div>
+
+    </>
   )
 }
 
