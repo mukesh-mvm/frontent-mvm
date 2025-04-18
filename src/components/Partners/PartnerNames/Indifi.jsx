@@ -10,7 +10,7 @@ function Indifi() {
       keydesc:`Indifi offers you customized business loans up to 50 lakhs.- 
 The business loan has several benefits like low processing fees and affordable interest rates, starting at only 1.5% per month. The quick disbursal ensures that your loan will available within 48 to 72 hours. Businesses will also have flexible repayment options. Apply now for customized business loans.    
  `,
-      site:`https://www.indifi.com`,
+      site:`https://www.indifi.com/msme-loans`,
       pros: [
         "Collateral Free Business Loans",
         "Easy & Transparent Processing",

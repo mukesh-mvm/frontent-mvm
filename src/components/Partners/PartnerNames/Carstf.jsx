@@ -9,7 +9,7 @@ function Carstf() {
       logo: "/images/crs.jfif",
       keydesc: `With Cars 24, buy or sell car in only 30 minutes.- Get a free car inspection, multiple quality checks and the option of a 7 day return. Quick, simple and convenient. In addition to providing immediate payment, Cars 24 handles all paperwork to ensure a hassle-free transaction. Discover how to buy and sell cars quickly with Cars 24 today..  
 `,
-      site: `https://www.cars24.com`,
+      site: `https://www.cars24.com/sell-marketing/`,
       pros: [
         "Doorstep test drive Facility",
         "Hassle Free experience, across the buying journey",

@@ -11,7 +11,7 @@ function BajajFinserv() {
 
 The affordable interest rates start from only 11% per annum, and allow clients to avail loans up to 50 lakh. Customers can also choose from Bajaj Markets’ vast range of lending partners as per their preferences. With this personal loan, manage all your personal finance needs without any worries.   
 `,
-      site: `https://www.bajajfinserv.in/`,
+      site: `https://www.bajajfinservmarkets.in/apply-for-personal-loan-finservmarkets/`,
       pros: [
         "Personal Loan up to Rs.55 Lakh",
         "Online Procedure and Instant Approval",
