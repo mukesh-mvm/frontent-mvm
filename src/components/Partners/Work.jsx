@@ -108,12 +108,12 @@ export default function WorkCarousel() {
                 <div className="flex flex-col flex-grow py-4 justify-between">
                   <div>
                     <h4 className="text-2xl font-bold mb-2">{work.title}</h4>
-                    <p className="text-base ">
+                    <p className="text-base  text-left">
                       {work.description}
                     </p>
                   </div>
                   <Link href={work.link || "/"}>
-  <button className="bg-blue-400 text-black  cursor-pointer py-2 px-4 rounded hover:bg-gray-300 transition">
+  <button className="bg-blue-400 text-black  cursor-pointer  py-2 px-4 rounded hover:bg-gray-300 transition">
     Explore Now
   </button>
 </Link>

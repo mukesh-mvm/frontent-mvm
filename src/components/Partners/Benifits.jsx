@@ -1,26 +1,33 @@
 "use client";
+import Link from "next/link";
 
-export default function Benifits() {
-  const slides = [
-    { offer: "Earn 5X Rewards on Tata Neu" },
-    { offer: "Get Free Airport Lounge Access" },
-    { offer: "Enjoy 1% Fuel Surcharge Waiver" },
-    { offer: "Access Exclusive Tata Partner Deals" },
-    { offer: "Track All Your Spending Easily" },
-  ];
+export default function Benifits({ benifits , pros }) {
+
+  
+
 
   return (
     <div className="w-full flex justify-center">
-      <div className="w-full max-w-3xl py-10 px-8">
-        <div className="bg-gradient-to-r from-[rgba(209,213,219,0.3)] via-[rgba(156,163,175,0.3)] to-[rgba(107,114,128,0.3)] rounded-2xl shadow-xl p-6 w-full border border-gray-200 space-y-5">
-          <h2 className="text-3xl text-black text-center font-bold">Key Benefits</h2>
+      <div className="w-full max-w-3xl  ">
+        <div className=" rounded-2xl shadow-2xl p-6 w-full   space-y-5">
+          <h2 className="text-3xl text-white text-center font-bold">Key Benefits</h2>
           <ol className="space-y-2 list-decimal list-inside text-left">
-            {slides.map((slide, index) => (
-              <li key={index} className="text-lg font-semibold text-violet-600">
-                {slide.offer}
+            {pros.map((point, index) => (
+              <li key={index} className="text-md ">
+                {point}
               </li>
             ))}
           </ol>
+
+          <div className="flex justify-center pt-4">
+            
+             <Link href={benifits[0].site} target="_blank">
+             <button className="bg-violet-600 cursor-pointer text-white px-6 py-2 rounded-lg font-medium hover:bg-violet-700 transition">
+                Know More
+              </button>
+              </Link>
+            
+          </div>
         </div>
       </div>
     </div>

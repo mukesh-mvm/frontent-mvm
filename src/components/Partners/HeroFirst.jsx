@@ -10,7 +10,7 @@ export default function HeroFirst({ herofirst }) {
     speed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     arrows: false,
   };
@@ -20,21 +20,20 @@ export default function HeroFirst({ herofirst }) {
       {herofirst.map((slide, index) => (
         <div
           key={index}
-          className="flex justify-center items-center py-10 px-2"
+          className="flex justify-center items-center w-full py-2 px-4 lg:py-12 lg:px-2"
         >
-          <div className="bg-gradient-to-r from-[rgba(209,213,219,0.3)] via-[rgba(156,163,175,0.3)] to-[rgba(107,114,128,0.3)] rounded-2xl shadow-xl p-6 w-full max-w-4xl  text-center space-y-5">
-            <h2 className="text-3xl font-bold text-violet-700">
+          <div className="bg-gradient-to-r from-[rgba(209,213,219,0.3)] via-[rgba(156,163,175,0.3)] to-[rgba(107,114,128,0.3)] rounded-2xl shadow-xl py-2 lg:w-[100%] sm:w-full max-w-4xl  text-center space-y-5">
+            <h2 className="text-2xl font-bold text-white">
               {slide.title}
             </h2>
-            <p className="text-xl text-black">{slide.description}</p>
             <div className="flex justify-center">
               <img
                 src={slide.logo}
                 alt={slide.title}
-                className="w-70 object-contain rounded-md"
+                className="w-full h-auto lg:h-[50vh] lg:object-contain rounded-md"
               />
             </div>
-            <p className="text-lg font-semibold text-violet-600">
+            <p className="text-lg font-semibold text-orange-400">
               {slide.offer}
             </p>
           </div>

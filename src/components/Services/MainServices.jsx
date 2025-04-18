@@ -2,10 +2,10 @@ import Link from "next/link";
 function MainServices({ data }) {
   return (
     <>
-      <hr className="border-gray-400 mb-6" />
+      <hr  />
       <div className="bg-black text-white py-10 px-4">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-center text-violet-400 mb-8">
+          <h1 className="text-4xl md:text-5xl font-bold text-center text-violet-400 mb-8">
             {data.title}
           </h1>
 
@@ -23,7 +23,7 @@ function MainServices({ data }) {
             {data.points.map((item, index) => (
               <li
                 key={index}
-                className="text-2xl font-semibold text-violet-300"
+                className="text-2xl text-violet-300"
               >
                 {item.heading}
                 <p className="text-lg leading-relaxed text-gray-300 mt pl-5">
