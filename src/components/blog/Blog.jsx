@@ -18,13 +18,13 @@ function Blog() {
   ];
 
   return (
-    <div className="bg-black min-h-screen py-10 flex justify-center">
+    <div className="bg-black min-h-screen py-8 flex justify-center">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {blogData.map((blog, index) => (
             <div
               key={index}
-              className="bg-[#414247] rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 p-4 flex flex-col items-center"
+              className="bg-[#414247] rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105  flex flex-col items-center"
             >
               <div className="h-48 w-full overflow-hidden rounded-t-lg">
                 <img
@@ -35,7 +35,7 @@ function Blog() {
               </div>
 
               <div className="p-4 text-center w-full">
-                <h3 className="text-xl font-semibold mb-3 text-white">{blog.title}</h3>
+                <h2 className="text-xl font-semibold mb-3 text-white">{blog.title}</h2>
                <Link href={`/blog/${blog.title.replace(/\s+/g, '-').toLowerCase()}`}> <button
                   className="bg-[#f5c518] text-black px-6 py-2 rounded-full hover:bg-[#d4a515] transition-colors cursor-pointer"
                 >

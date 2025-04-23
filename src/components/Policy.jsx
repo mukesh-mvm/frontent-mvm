@@ -42,6 +42,9 @@ Share different types of offers and products from brands.
  <li>Preventing fraudulent activity.</li>
  <li>We use the email id provided by you to address your queries.</li>
         </ul>
+        <p> To Communicate with You: We may use your information to respond to your inquiries, provide customer service support, send you important information about the services, and send you marketing communications (with your consent) via different channels, including but not limited to SMS, Email, RCS, WhatsApp, and Voice.
+        </p>
+        <br />
         <h2 className="text-2xl ">Sharing Your Information  </h2>
         <p>We don’t share your information with third parties except for when required by law or to protect our rights and interests. Data is obtained through our free tools to research and compare search engines. Finally, we never expose the manually detectable information provided to us online in ways that are unrelated.
         </p>

@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "MVM Business Services",
+  description:"MVM Business Services"
 };
 
 export default function RootLayout({ children }) {

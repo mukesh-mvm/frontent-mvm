@@ -1,74 +1,128 @@
 "use client";
-import { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import { useState } from "react";
 
-function Form() {
-  const form = useRef();
+export default function Form() {
+  const [submitted, setSubmitted] = useState(false);
+  const [agreed, setAgreed] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
-    emailjs
-      .sendForm("service_mj79z6v", "template_csbkyld", form.current, {
-        publicKey: "nLOt9-LnQhjoMFfyI",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-          form.current.reset();
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+    const formData = new FormData(e.target);
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await res.json();
+      if (result.success) {
+        setSubmitted(true);
+        e.target.reset();
+        setAgreed(false);
+      } else {
+        console.error("Web3Forms error:", result);
+      }
+    } catch (error) {
+      console.error("Submit failed:", error);
+    }
+
+    setLoading(false);
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-amber-50">
-      <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-[95%] md:w-[70%] mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-4 text-white">Contact Us</h2>
+    <>
+    <hr />
+    <div className="min-h-screen flex items-center justify-center  px-4 py-6">
+      <form
+        onSubmit={handleSubmit}
+        className="bg-gray-200 shadow-md rounded-xl p-8 w-full max-w-2xl"
+      >
+        {/* Web3Forms Access Key */}
+        <input type="hidden" name="access_key" value="8d887b6d-94e3-48cf-9455-a85001f477b7" />
 
-        <form ref={form} onSubmit={handleSubmit} className="flex flex-col space-y-4 text-white">
-          <label htmlFor="name" className="font-medium">Full Name:</label>
+        <h2 className="text-3xl font-semibold text-gray-600 mb-6">Get In Touch</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <input
             type="text"
-            id="name"
-            name="user_name"
-            placeholder="Please Enter Your Name"
-            className="p-2 border border-gray-600 bg-gray-700 rounded-md w-full text-white"
+            name="full_name"
+            placeholder="Full Name"
+            className="p-3 rounded-md bg-gray-300 text-gray-600 outline-none"
             required
           />
-
-          <label htmlFor="email" className="font-medium">Email:</label>
+          
+          <input
+            type="text"
+            name="company_name"
+            placeholder="Company Name"
+            className="p-3 rounded-md bg-gray-300 text-gray-600 outline-none"
+            required
+          />
+          
           <input
             type="email"
-            id="email"
-            name="user_email"
-            placeholder="Please Enter Your Email"
-            className="p-2 border border-gray-600 bg-gray-700 rounded-md w-full text-white"
+            name="email"
+            placeholder="Email"
+            className="p-3 rounded-md bg-gray-300 text-gray-600 outline-none"
             required
           />
-
-          <label htmlFor="message" className="font-medium">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            rows={6}
-            placeholder="Enter your message..."
-            className="p-2 border border-gray-600 bg-gray-700 rounded-md w-full text-white"
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone"
+            className="p-3 rounded-md bg-gray-300 text-gray-600 outline-none"
             required
-          ></textarea>
+          />
+        </div>
+        
+        <textarea
+          name="message"
+          rows="4"
+          placeholder="Type your message here"
+          className="w-full mt-4 p-3 rounded-md bg-gray-300 text-gray-600 outline-none"
+          required
+        ></textarea>
 
+        {/* Checkbox Agreement */}
+        <div className="flex items-center mt-4">
+          <input
+            id="checkbox"
+            type="checkbox"
+            className="mr-2"
+            checked={agreed}
+            onChange={(e) => setAgreed(e.target.checked)}
+            required
+          />
+          <label htmlFor="checkbox" className="text-blue-800">
+            By submitting the form I agree to the Privacy Policy and Terms of Use to receive
+            information from MVM BUSINESS SERVICES.
+          </label>
+        </div>
+
+        {/* Submit Button */}
+        <div className="flex justify-center mt-6">
           <button
             type="submit"
-            className="bg-blue-600 text-white w-[40%] md:w-[30%] mx-auto rounded-full p-2 hover:bg-blue-400 transition duration-300"
+            disabled={!agreed || loading}
+            className={`px-6 py-2 rounded-full text-white font-medium transition ${
+              agreed && !loading
+                ? "bg-gray-800 hover:bg-gray-700"
+                : "bg-gray-900 cursor-not-allowed"
+            }`}
           >
-            Submit
+            {loading ? "Submitting..." : "Submit"}
           </button>
-        </form>
-      </div>
+        </div>
+
+        {submitted && (
+          <p className="text-green-500 mt-4 text-center">Thanks for submitting!</p>
+        )}
+      </form>
     </div>
+    </>
+    
   );
 }
-
-export default Form;   

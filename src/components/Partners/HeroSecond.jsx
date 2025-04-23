@@ -1,48 +1,35 @@
 "use client";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 export default function HeroSecond({ herosecond }) {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 3000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 3000,
-    arrows: false,
-  };
-
   return (
-    <Slider {...settings}>
+    <div className="w-full flex flex-col items-center gap-6 px-4 py-6">
       {herosecond.map((slide, index) => (
         <div
           key={index}
-          className="flex justify-center items-center  "
+          className="relative rounded-2xl shadow-xl p-6 w-full max-w-4xl text-center lg:h-[370px] overflow-hidden"
         >
-          <div className="bg-gradient-to-r from-[rgba(209,213,219,0.3)] via-[rgba(156,163,175,0.3)] to-[rgba(107,114,128,0.3)] rounded-2xl shadow-xl p-6 lg:w-[100%] sm:w-full h-auto lg:h-[410px] max-w-4xl text-center">
-            <div className="h-full flex flex-col">
+          <div
+            className="absolute inset-0  bg-cover bg-center bg-no-repeat  scale-100"
+            style={{ backgroundImage: "url('/images/bg.jpg')" }}
+          ></div>
 
-              {
-                 slide?.keydesc?.split('-').map((item)=>{
-                   return (
-                    <>
-                    <p className="text-[17px] text-white text-justify px-4">
+<div className="relative z-10 h-full flex flex-col justify-start gap-4 rounded-2xl px-4 py-2 scroll-container">
+            <p className="text-blue-700 font-bold text-3xl font-rubik underline">
+              {slide.title}
+            </p>
+            <div className="flex flex-col gap-2 text-left">
+              {slide?.keydesc?.split("-").map((item, idx) => (
+                <p
+                  key={idx}
+                  className="text-[15px] lg:text-[18px] text-blue-700 font-bold font-rubik"
+                >
                   {item}
-              </p>
-
-              <br/>
-                    </>
-                   )
-                 })
-              }
-              
+                </p>
+              ))}
             </div>
           </div>
         </div>
       ))}
-    </Slider>
+    </div>
   );
 }

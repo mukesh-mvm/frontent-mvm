@@ -8,7 +8,7 @@ function Hire() {
         your brand and drive remarkable customer acquisition.
       </p>
       <Link href="/contact">
-        <button className="w-56 bg-gray-800 text-white text-lg px-6 py-3 rounded-md transition duration-300 mt-6 hover:bg-gray-700">
+        <button className="w-56 bg-gray-800 cursor-pointer text-white text-lg px-6 py-3 rounded-md transition duration-300 mt-6 hover:bg-gray-700">
           Contact Us
         </button>
       </Link>

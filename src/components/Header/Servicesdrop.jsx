@@ -19,7 +19,7 @@ export default function Servicesdrop() {
     <div className="relative inline-block text-left z-50">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="inline-flex items-center  text-[1.1rem]  font-medium    text-white ]"
+        className="inline-flex items-center  text-[1.1rem]  font-medium  text-white  sm:text-lowercase"
       >
         SERVICES
         <span

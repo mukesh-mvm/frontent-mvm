@@ -3,10 +3,9 @@ import Merge from "../Merge";
 function TataNeu() {
   const slides = [
     {
-      title: "Tata Neu credit card ",
-      description: "Tata Neu HDFC Bank Credit Card",
-      offer: "Upto 10% Savings everytime you shop",
-      logo: "/images/tatan.jfif",
+      title:"TataNeu Card",
+      offer: "Quick and contactless transactions every time",
+      logo: "/images/tataa.jfif",
       keydesc:`Tata Neu’s credit card is a versatile choice, as it covers expenses among most of Tata Neu’s partner brands.-
 With perks like contactless payment and interest free credit period, it offers convenience and flexibility for users. Additionally, cardholders can earn rewards points on their purchases which can be redeemed while shopping. So, if you want value for money, get this card. 
 `,
@@ -21,16 +20,10 @@ With perks like contactless payment and interest free credit period, it offers c
       ]
       
     },
-    {
-      title: "Tata Neu",
-      description: "Save big Move Big",
-      offer: "Upto 10% Savings everytime you shop",
-      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsIhRjFwumE2XyuEhBxISWpcYE8EsE1RKGjA&s",
-    },
   ];
 
   return (
-    <div className="py-4">
+    <div >
       <Merge slides={slides} />
     </div>
   );

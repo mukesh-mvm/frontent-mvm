@@ -1,106 +1,58 @@
-"use client"
-import { FaFacebook, FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
+"use client";
+import { FaFacebook, FaYoutube, FaInstagram, FaTwitter, FaLinkedin} from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
-  const footerNavs = [
-    {
-      label: "Quick Links",
-      items: [
-        { href: "/", name: "Home" },
-        { href: "#", name: "News" },
-        { href: "#", name: "Viral Stories" },
-        { href: "#", name: "Match Score" },
-      ],
-    },
-    {
-      label: "Company",
-      items: [
-        { href: "#", name: "About Us" },
-        { href: "#", name: "Careers" },
-        { href: "/contact", name: "Contact" },
-        { href: "policy", name: "Privacy Policy" },
-      ],
-    },
-    {
-      label: "Resources",
-      items: [
-        { href: "#", name: "Terms of Service" },
-        { href: "#", name: "FAQs" },
-        { href: "#", name: "Support" },
-        { href: "#", name: "Advertising" },
-      ],
-    },
-  ];
-
   return (
-    <footer className="bg-black text-gray-300 py-14">
-    <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-10">
-      
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between border-b border-gray-700 pb-10 gap-6">
-        <div className="max-w-lg">
-          <h3 className="text-white text-2xl font-sans">
-            MVM BUSINESS SERVICES 
-          </h3>
-          <p className="text-gray-400 mt-2 text-sm">
-            Subscribe to our newsletter for the latest trending stories and updates.
-          </p>
+    <>
+      <footer className="bg-black text-gray-200 px-6 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+       <p className="text-2xl">Address: </p><span>1028, 10th, ITHUM TOWER, I. T. Park, Block A, Industrial Area, Sector 62, Noida, Uttar Pradesh</span>
+       <p className="text-2xl">Email: </p><span>contact@mvmbs.com</span>
         </div>
-  
-        <form
-          onSubmit={(e) => e.preventDefault()}
-          className="w-full md:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-3"
-        >
-          <input
-            type="email"
-            required
-            placeholder="Enter your email"
-            className="flex-1 px-4 py-2 text-gray-900 bg-white outline-none border border-gray-300 focus:border-purple-500 shadow-sm rounded-lg"
-          />
-          <button className="bg-purple-600 text-white px-5 py-2 text-sm font-medium rounded-lg shadow-md hover:bg-purple-500 transition">
-            Subscribe
-          </button>
-        </form>
-      </div>
-  
-      {/* Navigation Links */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12 text-center sm:text-left">
-        {footerNavs.map((nav, idx) => (
-          <div key={idx}>
-            <h4 className="text-white font-semibold mb-3">{nav.label}</h4>
-            <ul className="space-y-2">
-              {nav.items.map((item, index) => (
-                <li key={index}>
-                  <a href={item.href} className="hover:text-gray-400 transition">
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
+
+        <div>
+          <h6 className="text-xl font-semibold mb-4 text-white">Company</h6>
+          <ul className="space-y-2">
+            <li><a className="hover:text-orange-400 transition" href="#">About us</a></li>
+            <li><Link  href='/contact' className="hover:text-orange-400 transition">Contact </Link></li>
+            <li><Link  href='/blog' className="hover:text-orange-400 transition">Campaigns</Link></li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 className="text-xl font-semibold mb-4 text-white">Legal</h6>
+          <ul className="space-y-2">
+            <li><Link href='/terms-conditions' className="hover:text-orange-400 transition">Terms and conditions</Link></li>
+            <li><Link  href='/policy' className="hover:text-orange-400 transition">Privacy policy</Link></li>
+            <li><a className="hover:text-orange-400 transition" href="#">Cookie policy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 className="text-xl font-semibold mb-4 text-white">Follow Us</h6>
+          <div className="flex gap-4 text-white text-2xl">
+            <Link href="https://www.facebook.com/mvmbs/" className="hover:text-orange-400 transition"><FaTwitter /></Link>
+            <Link href="https://www.facebook.com/mvmbs/" className="hover:text-orange-400 transition"><FaFacebook /></Link>
+            <Link href="https://in.linkedin.com/company/mvm-business-services" className="hover:text-orange-400 transition"><FaLinkedin /></Link>
+            <Link href="https://instagram.com" className="hover:text-orange-400 transition"><FaInstagram /></Link>
+            <Link href="#" className="hover:text-orange-400 transition"><FaYoutube /></Link>
           </div>
-        ))}
-      </div>
-  
-      {/* Footer Bottom Section */}
-      <div className="mt-12 border-t border-gray-700 pt-6 flex flex-col md:flex-row md:items-center md:justify-between text-center md:text-left gap-4">
-        <p className="text-sm">© 2025 All rights reserved.</p>
-        <div className="flex flex-col sm:flex-row flex-wrap justify-center md:justify-end gap-4">
-          <a href="#" className="flex items-center gap-2 hover:text-gray-400 justify-center">
-            <FaFacebook size={20} /> <span>Facebook</span>
-          </a>
-          <a href="#" className="flex items-center gap-2 hover:text-gray-400 justify-center">
-            <FaTwitter size={20} /> <span>Twitter</span>
-          </a>
-          <a href="#" className="flex items-center gap-2 hover:text-gray-400 justify-center">
-            <FaGithub size={20} /> <span>GitHub</span>
-          </a>
-          <a href="#" className="flex items-center gap-2 hover:text-gray-400 justify-center">
-            <FaInstagram size={20} /> <span>Instagram</span>
-          </a>
         </div>
-      </div>
-    </div>
-  </footer>
-  
+      </footer>
+
+      <footer className="bg-black text-gray-300 flex flex-col md:flex-row justify-between items-center px-6 py-4 border-t border-gray-700">
+        <div className="flex items-center gap-4">
+          <img
+            src="/images/logo.png"
+            alt="MVM logo"
+            className="w-16 h-16 object-contain"
+          />
+          <p className="text-md">MVM Business Services</p>
+        </div>
+        <p className="text-sm mt-2 md:mt-0">&copy; {new Date().getFullYear()} All rights reserved.</p>
+      </footer>
+    </>
   );
 };
 
