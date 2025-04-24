@@ -26,14 +26,14 @@ function Home() {
   }, []);
 
   return (
-    <div className="mx-[2%] mt-[2%]">
-      <div className="flex items-center justify-between gap-12 px-2 flex-wrap lg:flex-nowrap">
+    <div className="py-8 px-8 bg-[#141313]">
+      <div className="flex items-center justify-between gap-12 px-2 flex-wrap lg:flex-nowrap ">
         {/* Image First on Mobile */}
         <div className="w-full lg:w-1/2 flex justify-center order-1 lg:order-2">
           <img
             src="/images/Home.png"
             alt="Home"
-            className="max-w-full max-h-[70vh] rounded-xl object-cover"
+            className="max-w-full  rounded-xl object-cover"
           />
         </div>
 
@@ -43,7 +43,7 @@ function Home() {
             Driving exponential digital growth for your brand with our data & AI driven marketing strategies
           </h1>
           <div
-            className="text-orange-500 font-bold text-[1.2rem] sm:text-[1.3rem] md:text-[1.4rem] border-b-2 border-gray-300 inline-block mt-4"
+            className="text-orange-500 font-bold  lg:text-[1.5rem] sm:text-[1.3rem] md:text-[1.4rem] border-b-2 border-gray-300 inline-block mt-4"
             ref={quoteRef}
           >
             <p>

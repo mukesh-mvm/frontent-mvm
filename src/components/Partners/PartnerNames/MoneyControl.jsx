@@ -3,8 +3,7 @@ import Merge from "../Merge";
 function MoneyControl() {
   const slides = [
     {
-      title:"Money Control",
-      offer: " Flexible, collateral free loans up to 50 lakhs",     
+      image: "/images/money.png",      offer: " Flexible, collateral free loans up to 50 lakhs",     
       logo: "/images/mnc.png",
       keydesc:`Moneycontrol’s personal loan offers collateral free loans with quick approval and disbursal.-
 

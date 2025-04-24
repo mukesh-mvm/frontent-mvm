@@ -3,7 +3,7 @@ import Merge from "../Merge";
 function BajajFinserv() {
   const slides = [
     { 
-      title:"Bajaj Finserv Personal Loans ",
+      image: "/images/bajaj.png",
       offer: "Instant personal loans up to 50 lakhs",
       logo: "/images/bjajpl.jfif",
       keydesc: ` With Bajaj Finserv, you can get instant personal loans and also online.-

@@ -5,52 +5,54 @@ export default function Benifits({ benifits, pros }) {
   return (
     <div className="w-full flex justify-center px-4 py-8">
       <div className="flex flex-col lg:flex-row gap-4 w-full max-w-6xl items-stretch">
+        
         {/* Left Image */}
-        <div className="w-full lg:w-1/4">
-          <Link href={benifits[0].site} target="_blank" className="block h-full w-full">
+        <div className="w-full lg:w-1/4 flex items-center justify-center   p-2 min-h-[400px]">
+          <Link href={benifits[0].site} target="_blank" className="block w-full h-full">
             <img
               src={benifits[0].benifirst}
               alt="Left Banner"
-              className="w-full h-full object-cover rounded-2xl shadow-lg"
+              className="w-full h-full rounded-2xl shadow-lg object-fill"
             />
           </Link>
         </div>
 
         {/* Middle Content */}
         <div
-  className="flex-grow bg-cover bg-center bg-no-repeat rounded-2xl shadow-2xl p-6 flex items-center justify-center relative min-h-[400px]"
-  style={{
-    backgroundImage: `url('/images/benifits_bg.jpg')`,
-  }}
->
-  <div className="absolute inset-0  rounded-2xl z-0"></div>
+          className="flex-grow min-h-[400px] rounded-2xl shadow-2xl p-6 flex items-center justify-center relative bg-white"
+          style={{
+            backgroundImage: `url('/images/benifits_bg.jpg')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="absolute inset-0 bg-white/70 rounded-2xl z-0"></div>
+          <div className="relative z-10 w-full max-w-3xl text-center flex flex-col items-center justify-center space-y-6">
+            <h2 className="text-3xl text-blue-700 font-bold font-rubik underline">
+              Key Benefits
+            </h2>
 
-  <div className="relative z-10 w-full max-w-3xl text-center flex flex-col items-center justify-center space-y-6">
-    <h2 className="text-3xl text-blue-700 font-bold font-rubik underline">
-      Key Benefits
-    </h2>
+            <ul className="list-disc list-outside text-blue-700 font-rubik text-lg lg:text-xl text-left px-4">
+              {pros.map((point, index) => (
+                <li key={index}>{point}</li>
+              ))}
+            </ul>
 
-    <ul className="list-disc list-outside text-blue-700 font-rubik text-lg lg:text-xl text-left">
-      {pros.map((point, index) => (
-        <li key={index}>{point}</li>
-      ))}
-    </ul>
-
-    <Link href={benifits[0].site} target="_blank">
-      <button className="bg-orange-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-violet-700 transition">
-        Know More
-      </button>
-    </Link>
-  </div>
-</div>
+            <Link href={benifits[0].site} target="_blank">
+              <button className="bg-orange-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-violet-700 transition">
+                Know More
+              </button>
+            </Link>
+          </div>
+        </div>
 
         {/* Right Image */}
-        <div className="w-full lg:w-1/4">
-          <Link href={benifits[0].site} target="_blank" className="block h-full w-full">
+        <div className="w-full lg:w-1/4 flex items-center justify-center  p-2 min-h-[400px]">
+          <Link href={benifits[0].site} target="_blank" className="block w-full h-full">
             <img
               src={benifits[0].benisec}
               alt="Right Banner"
-              className="w-full h-full object-cover rounded-2xl shadow-lg"
+              className="w-full h-full  rounded-2xl shadow-lg object-fill"
             />
           </Link>
         </div>

@@ -3,7 +3,7 @@ import Merge from "../Merge";
 function TataNeu() {
   const slides = [
     {
-      title:"TataNeu Card",
+      image: "/images/tata.png",
       offer: "Quick and contactless transactions every time",
       logo: "/images/tata_neu.jfif",
       keydesc:`Tata Neu’s credit card is a versatile choice, as it covers expenses among most of Tata Neu’s partner brands.-

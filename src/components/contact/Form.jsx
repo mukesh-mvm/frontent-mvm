@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-
+import Link from 'next/link'
 export default function Form() {
   const [submitted, setSubmitted] = useState(false);
   const [agreed, setAgreed] = useState(false);
@@ -52,7 +52,7 @@ export default function Form() {
           onSubmit={handleSubmit}
           className="bg-gray-50 shadow-xl rounded-2xl p-10 w-full"
         >
-          <input type="hidden" name="access_key" value="" />
+          <input type="hidden" name="access_key" value="8d887b6d-94e3-48cf-9455-a85001f477b7" />
 
           <h2 className="text-4xl font-bold text-gray-800 mb-8">Get In Touch</h2>
 
@@ -109,7 +109,9 @@ export default function Form() {
               required
             />
             <label htmlFor="checkbox" className="text-sm text-gray-600">
-              By submitting the form, I agree to the Privacy Policy and Terms of Use to receive
+              By submitting the form, I agree to the {" "}
+              <Link href='/privacy-policy'><span className="font-bold">Privacy Policy</span></Link>  and  {" "}
+              <Link href='/terms-of-use' ><span className="font-bold">Terms of Use</span></Link> to receive
               information from MVM BUSINESS SERVICES.
             </label>
           </div>

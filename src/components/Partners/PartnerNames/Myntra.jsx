@@ -3,7 +3,7 @@ import Merge from "../Merge";
 function Myntra() {
   const slides = [
     {
-     title:"Myntra",
+      image: "/images/myntra.png",
       offer: " India’s favourite online fashion store",
       logo: "/images/my.webp",
       keydesc: `Myntra Fashion gives you products that are 100% original and high quality.- 

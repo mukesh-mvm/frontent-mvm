@@ -12,7 +12,8 @@ function TermsConditions() {
         </div>
       </div>
 
-      <div className=" py-10 max-w-4xl mx-auto px-4">
+      <div className="bg-[#141313]">
+      <div className=" py-10 max-w-4xl mx-auto px-4 ">
         <ul className="list-disc list-outside pl-6 space-y-4 text-azure-700 text-lg ">
           <li >
             We are a digital marketing company. We help other brands in running
@@ -107,6 +108,7 @@ function TermsConditions() {
             You can reach us on ‘contact@mvmbs.com’.
           </li>
         </ul>
+      </div>
       </div>
     </>
   );

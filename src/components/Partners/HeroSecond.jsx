@@ -13,10 +13,9 @@ export default function HeroSecond({ herosecond }) {
             style={{ backgroundImage: "url('/images/benifits_bg.jpg')" }}
           ></div>
 
-<div className="relative z-10 h-full flex flex-col justify-start gap-4 rounded-2xl px-4 py-2 scroll-container">
-            <p className="text-blue-700 font-bold text-3xl font-rubik underline">
-              {slide.title}
-            </p>
+          <div className="relative z-10 h-full flex flex-col justify-start rounded-2xl px-4  scroll-container">
+            <img src={slide.image} alt="Logo" className="h-24 w-auto mx-auto sticky" />
+
             <div className="flex flex-col gap-2 text-left">
               {slide?.keydesc?.split("-").map((item, idx) => (
                 <p

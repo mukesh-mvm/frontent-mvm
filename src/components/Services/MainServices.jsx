@@ -10,13 +10,14 @@ function MainServices({ data }) {
           </h1>
 
           {data.img && (
-            <div className="rounded-xl overflow-hidden shadow-lg mb-10 flex justify-center items-center ">
-              <img
-                src={data.img}
-                alt={data.title}
-                className=" h-full w-[50%]  object-cover"
-              />
-            </div>
+         <div className="rounded-xl overflow-hidden shadow-lg mb-10 flex justify-center items-center">
+         <img
+           src={data.img}
+           alt={data.title}
+           className="w-full sm:w-2/3 md:w-1/2 lg:w-[50%] h-auto object-cover"
+         />
+       </div>
+       
           )}
           <ol className="list-decimal list-inside space-y-6">
             {data.points.map((item, index) => (

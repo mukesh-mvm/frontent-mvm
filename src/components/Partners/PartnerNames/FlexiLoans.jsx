@@ -3,7 +3,7 @@ import Merge from "../Merge";
 function FlexiLoans() {
   const slides = [
     {
-      title:"Flexi Loans",
+      image: "/images/flexi.png",
       offer: "Get hassle free loans within 48 hours",
       logo: "/images/flexiloan.jfif",
       benifirst:'/images/flexii.jfif',

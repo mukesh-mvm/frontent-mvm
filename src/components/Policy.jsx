@@ -8,7 +8,8 @@ function Policy() {
         </div>
       </div>
 
-      <div className=" py-4 max-w-4xl mx-auto bg-azure-200">
+      <div className="bg-[#141313]">
+      <div className=" py-4 max-w-4xl mx-auto ">
         <p className="text-azure-700 text-lg leading-relaxed">
           Welcome to MVM Business Services (referred to herein as "we," "us," or "our"). 
           We are committed to protecting your privacy and providing a safe online experience for all our users. 
@@ -60,12 +61,13 @@ Share different types of offers and products from brands.
         <br />
 
         <h2 className="text-2xl ">Contact us  </h2>
-     <p>If you have any questions or concerns about this Privacy Policy or our practices regarding your personal information, please contact us at info@mvmbs.com.
+     <p>If you have any questions or concerns about this Privacy Policy or our practices regarding your personal information, please contact us at contact@mvmbs.com.
      </p>
      <br />
 
 <h4 className="text-2xl font-bold">Thank you for choosing MVM Business Services!</h4>
 
+      </div>
       </div>
     </>
   );
