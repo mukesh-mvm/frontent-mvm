@@ -3,11 +3,11 @@ import MainServices from './MainServices';
 
 function PerformanceMarketing() {
   const data = {
-    title: "Performance Marketng",
+    title: "Performance Marketing",
     img: "/images/performance_marketing.png",
     points: [
       {
-        heading: "What is Performance Marketing?",
+        heading: "What is Performance Marketing?", 
         description:
           "We define your brand's unique value in the market and position it to resonate with your target audience. Our strategies ensure long-term brand loyalty and differentiation.",
       },

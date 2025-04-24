@@ -86,46 +86,44 @@ export default function WorkCarousel() {
 
   
   return (
-    <div id='partners' className="py-10 bg-[#323336] text-white text-center">
-      <h2 className="text-4xl font-bold mb-6 underline">Our Partners</h2>
-      <div className="max-w-6xl mx-auto px-4">
-        <Slider {...settings}>
-          {workData.map((work, index) => (
-            <div key={index} className="p-4">
-       <div className="bg-[#414247] rounded-lg p-6 flex flex-col h-[500px]">
-  {/* Image Section */}
-  <div className="bg-white">
-    <img
-      src={work.image}
-      alt={work.title}
-      className="w-full h-[170px] object-cover rounded-lg mb-4"
-    />
-  </div>
-
-  {/* Content Section */}
-  <div className="flex flex-col flex-grow justify-between">
-  {/* Fixed height area with text truncation */}
-  <div>
-    <h4 className="text-2xl font-bold mb-2">{work.title}</h4>
-    <p className="text-base text-left">{work.description}</p>
-  </div>
-
-  {/* Button stays aligned at bottom */}
-  <div className="pt-4">
-    <Link href={work.link || "/"}>
-      <button className="bg-blue-400 cursor-pointer text-black py-2 px-4 rounded hover:bg-gray-300 transition">
-        Explore Now
-      </button>
-    </Link>
-  </div>
-</div>
-
-</div>
-
+    <div id="partners" className="py-10 bg-[#323336] text-white text-center">
+    <h2 className="text-4xl font-bold mb-6 underline">Our Partners</h2>
+  
+    <div className=" relative max-w-6xl mx-auto px-4 ">
+      <Slider {...settings}>
+        {workData.map((work, index) => (
+          <div key={index} className="p-4">
+            {/* Full-height Card with Fixed Button */}
+            <div className="bg-[#414247] rounded-lg p-6 h-[500px] flex flex-col transition duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-[#505155]">
+              {/* Image */}
+              <div className="bg-white  overflow-hidden mb-4">
+                <img
+                  src={work.image}
+                  alt={work.title}
+                  className="w-full h-[170px] object-cover"
+                />
+              </div>
+  
+              {/* Title + Description */}
+              <h4 className="text-2xl font-bold mb-2">{work.title}</h4>
+              <div className="flex-grow overflow-y-auto pr-1 text-left">
+                <p className="text-base">{work.description}</p>
+              </div>
+  
+              {/* Button Fixed at Bottom */}
+              <div className="pt-4">
+                <Link href={work.link || "/"}>
+                  <button className="bg-blue-400 text-black cursor-pointer py-2 px-6 rounded hover:bg-blue-500 transition duration-300 ">
+                    Explore Now
+                  </button>
+                </Link>
+              </div>
             </div>
-          ))}
-        </Slider>
-      </div>
+          </div>
+        ))}
+      </Slider>
     </div>
+  </div>
+  
   );
 }

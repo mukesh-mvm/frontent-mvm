@@ -2,7 +2,7 @@ import MainServices from './MainServices';
 
 function AffiliateMarketing() {
   const data = {
-    title: "Affiliate Marketng",
+    title: "Affiliate Marketing",
     img: "/images/affiliate_marketing.jpg",
     points: [
       {

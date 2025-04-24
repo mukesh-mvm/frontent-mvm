@@ -1,3 +1,4 @@
+import TermsConditions from "@/components/TermsAndCondtions/TermsConditions";
 export const metadata = {
   description:
     "MVM Business Services is a data-driven digital marketing agency helping brands grow through innovative strategies, engaging content, and performance-focused campaigns. We specialize in brand building, SEO, social media, affiliate marketing, and web development.",
@@ -15,7 +16,7 @@ export const metadata = {
 
 function page() {
   return (
-    <div>page </div>
+    <div><TermsConditions/></div>
   )
 }
 

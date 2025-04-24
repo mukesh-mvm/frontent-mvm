@@ -52,28 +52,32 @@ function Services() {
   ];
 
   return (
-    <div
-      className="bg-gray-200 max-w-full mx-auto text-black py-8 px-2 text-center"
-      id="services"
-    >
-      <h1 className="text-4xl font-bold underline mb-10">Our Services</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-        {servicesData.map((service, index) => (
-          <Link
-        href ={service.href}
-            key={index}
-            className="bg-blue-100 p-6 rounded-xl text-center shadow-md border-2 border-transparent hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-b hover:from-gray-100 hover:to-gray-200 hover:border-black/20 transition-all duration-300"
-          >
-            <h4 className="text-2xl font-bold underline mb-3">
-              {service.title}
-            </h4>
-            <p className="text-base text-gray-700 leading-relaxed">
-              {service.description}
-            </p>
-          </Link>
-        ))}
-      </div>
-    </div>
+<div
+  className="bg-gray-200 max-w-full mx-auto text-black py-8 px-2 text-center"
+  id="services"
+>
+  <h1 className="text-4xl font-bold underline mb-10">Our Services</h1>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+    {servicesData.map((service, index) => (
+      <Link
+        href={service.href}
+        key={index}
+        className="flex flex-col justify-between bg-blue-100 p-6 rounded-xl text-center shadow-md border-2 border-transparent hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-b hover:from-gray-100 hover:to-gray-200 hover:border-black/20 transition-all duration-300 min-h-[320px]" // fixed min height
+      >
+        <div>
+          <h4 className="text-2xl font-bold underline mb-3">{service.title}</h4>
+          <p className="text-base text-gray-700 leading-relaxed">{service.description}</p>
+        </div>
+
+        <button className="mt-2 border-2 border-blue-600 text-blue-700 font-semibold px-4 py-2 rounded-full hover:bg-blue-800 hover:text-white transition duration-300">
+          Read More
+        </button>
+      </Link>
+    ))}
+  </div>
+</div>
+
   );
 }
 

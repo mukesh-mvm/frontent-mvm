@@ -71,3 +71,15 @@ body {
     animation: marquee-right 15s linear infinite;
   }
   
+
+  /* Customize slick dots */
+.slick-dots li button:before {
+  font-size: 16px !important; /* Increase dot size */
+  color: white !important;    /* Make dots white */
+  opacity: 0.6;               /* Optional: faded until active */
+}
+
+.slick-dots li.slick-active button:before {
+  color: white !important;
+  opacity: 1; /* Full opacity for active dot */
+}

@@ -26,11 +26,11 @@ const Navbar = () => {
 
         <nav className="w-2/5 justify-end hidden md:flex">
         <ul className="flex gap-5 text-[1.2rem] pr-[10%]">
-            <li><Link href="/">HOME</Link></li>
-            <li><Link href="/#partners">PARTNERS</Link></li>
-            <li><Servicesdrop /></li>
-            <li><Link href="/blog">BLOG</Link></li>
-            <li><Link href="/contact">CONTACT</Link></li>
+            <li><Link href="/" className="hover:text-orange-400">HOME</Link></li>
+            <li><Link href="/#partners" className="hover:text-orange-400">PARTNERS</Link></li>
+            <li className="hover:text-orange-400"><Servicesdrop /></li>
+            <li className="hover:text-orange-400"><Link href="/blog" >BLOG</Link></li>
+            <li><Link href="/contact" className="hover:text-orange-400">CONTACT</Link></li>
           </ul>
         </nav>
         <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
@@ -43,11 +43,24 @@ const Navbar = () => {
         <div className="md:hidden bg-black shadow-lg w-full absolute top-16 left-0 z-50">
           <nav className="flex flex-col items-center py-6 space-y-4">
             <ul className="text-white text-lg font-semibold space-y-4">
-              <li><Link href="/">Home</Link></li>
-              <li><Link href="/#partners">Partners</Link></li>
-              <li><Servicesdrop /></li>
-              <li><Link href="/blog">Blog</Link></li>
-              <li><Link href="/contact">Contact Us</Link></li>
+            <li>
+  <Link href="/" className="hover:text-orange-400">Home</Link>
+</li>
+<li>
+  <Link href="/#partners" className="hover:text-orange-400">Partners</Link>
+</li>
+<li>
+  <div className="inline-block hover:text-orange-400">
+    <Servicesdrop />
+  </div>
+</li>
+<li>
+  <Link href="/blog" className="hover:text-orange-400">Blog</Link>
+</li>
+<li>
+  <Link href="/contact" className="hover:text-orange-400">Contact Us</Link>
+</li>
+
             </ul>
           </nav>
         </div>

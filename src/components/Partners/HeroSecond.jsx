@@ -10,7 +10,7 @@ export default function HeroSecond({ herosecond }) {
         >
           <div
             className="absolute inset-0  bg-cover bg-center bg-no-repeat  scale-100"
-            style={{ backgroundImage: "url('/images/bg.jpg')" }}
+            style={{ backgroundImage: "url('/images/benifits_bg.jpg')" }}
           ></div>
 
 <div className="relative z-10 h-full flex flex-col justify-start gap-4 rounded-2xl px-4 py-2 scroll-container">
