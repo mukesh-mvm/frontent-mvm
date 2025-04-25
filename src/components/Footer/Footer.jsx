@@ -20,7 +20,7 @@ const Footer = () => {
     <div>
       <h6 className="text-xl font-semibold mb-4 text-white">Company</h6>
       <ul className="space-y-2">
-        <li><a className="hover:text-orange-400 transition" href="#">About us</a></li>
+        <li><a className="hover:text-orange-400 transition" href="/">About us</a></li>
         <li><Link href='/contact' className="hover:text-orange-400 transition">Contact</Link></li>
         <li><Link href='/blog' className="hover:text-orange-400 transition">Campaigns</Link></li>
       </ul>
@@ -30,9 +30,9 @@ const Footer = () => {
     <div>
       <h6 className="text-xl font-semibold mb-4 text-white">Legal</h6>
       <ul className="space-y-2">
-        <li><Link href='/terms-of-use' className="hover:text-orange-400 transition">Terms of use</Link></li>
-        <li><Link href='/privacy-policy' className="hover:text-orange-400 transition">Privacy policy</Link></li>
-        <li><a className="hover:text-orange-400 transition" href="#">Cookie policy</a></li>
+        <li><Link href='/terms-conditions' className="hover:text-orange-400 transition">Terms of use</Link></li>
+        <li><Link href='/policy' className="hover:text-orange-400 transition">Privacy policy</Link></li>
+      
       </ul>
     </div>
 
