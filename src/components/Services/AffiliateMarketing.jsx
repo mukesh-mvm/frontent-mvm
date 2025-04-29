@@ -3,7 +3,7 @@ import MainServices from './MainServices';
 function AffiliateMarketing() {
   const data = {
     title: "Affiliate Marketing",
-    img: "/images/affiliate_marketing.jpg",
+    img: "/images/affiliate_marketing.webp",
     points: [
       {
         heading: "What is Affiliate Marketing?",

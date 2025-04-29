@@ -3,7 +3,7 @@ import MainServices from './MainServices';
 function SocialMediaMarketing() {
   const data = {
     title: "Social Media Marketing",
-    img: "/images/smm.jfif",
+    img: "/images/smm.webp",
     points: [
       {
         heading: "What is Social Media Marketing?",

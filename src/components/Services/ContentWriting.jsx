@@ -4,11 +4,11 @@ import MainServices from "./MainServices";
 function ContentWriting() {
   const data = {
     title: "Content Writing",
-    img: "/images/content.jfif",
+    img: "/images/content.webp",
     points: [
       {
-        heading: "What is Brand Marketing?",
-        description: `Brand Marketing refers to a long term plan for building, establishing and promoting brands. Its end goal is to establish a positive brand image and build brand equity. 
+        heading: "What is Content Writing?",
+        description: `Content Writing refers to a long term plan for building, establishing and promoting brands. Its end goal is to establish a positive brand image and build brand equity. 
 `,
       },
       {

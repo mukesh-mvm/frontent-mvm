@@ -4,7 +4,7 @@ import MainServices from './MainServices';
 function WebDevelopment() {
   const data = {
     title: "Web Development",
-    img: "/images/web.jfif",
+    img: "/images/web.webp",
     points: [
       {
         heading: "What is Brand Marketing?",

@@ -3,7 +3,7 @@ import MainServices from "./MainServices";
 function BrandMarketing() {
   const data = {
     title: "Brand Marketing",
-    img: "/images/brand.jfif",
+    img: "/images/brand.webp",
     points: [
       {
         heading: "What is Brand Marketing?",

@@ -27,11 +27,12 @@ const page = async ({ params }) => {
   const data = [
     {
       id: 1,
-      title: "New Blog Post",
+      title: "Impact of Ai",
       content: `  <div class="max-w-3xl bg-white rounded-lg shadow-md overflow-hidden">
         <div class="p-6">
           <h1 class="text-3xl font-bold text-gray-900 text-center mb-4 underline">
-            Title is coming, wait for it
+            
+How AI is Reshaping Our World: Opportunities and Challenges
           </h1>
         </div>
 
@@ -43,13 +44,12 @@ const page = async ({ params }) => {
 
         <div class="p-6">
           <h3 class="text-xl font-semibold text-gray-800 mb-3">
-            Know how much yellow metal you can keep at home without facing tax scrutiny and how the income from gold is taxed.
+Artificial Intelligence (AI) is significantly transforming industries, economies, and daily life. Its ability to process vast amounts of data, learn from patterns, and make intelligent decisions is driving innovation across sectors like healthcare, finance, manufacturing, marketing, and logistics.
+
           </h3>
 
           <p class="text-gray-700 leading-7">
-            Do you know how much gold you can keep at home? The government has set a limit on this. If you're buying gold jewellery, find out how much you can keep at home without tax issues and learn about the taxation of gold income. 
-
-            The government has set certain rules for how much gold or gold ornaments you can keep at home. It's important for everyone to follow these rules, but many people are unaware of the specified amount allowed. Let us inform you about it.
+           AI also plays a major role in improving customer experience through chatbots, recommendation engines, and real-time support. In education, AI-powered platforms personalize learning experiences to meet individual student needs. However, with its rapid growth, AI raises ethical concerns such as data privacy, job displacement, and algorithmic bias. While it streamlines processes and creates new opportunities, it also necessitates thoughtful regulation and responsible use to ensure it benefits society as a whole.
           </p>
 
           <p class="text-gray-700 leading-7 mt-4">

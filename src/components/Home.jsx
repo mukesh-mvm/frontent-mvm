@@ -27,17 +27,15 @@ function Home() {
 
   return (
     <div className="py-8 px-8 bg-[#141313]">
-      <div className="flex items-center justify-between gap-12 px-2 flex-wrap lg:flex-nowrap ">
-        {/* Image First on Mobile */}
+      <div className="flex items-center justify-between gap-2 lg:gap-2   lg:px-2 flex-wrap lg:flex-nowrap ">
         <div className="w-full lg:w-1/2 flex justify-center order-1 lg:order-2">
           <img
-            src="/images/Home.png"
+            src="/images/Home.webp"
             alt="Home"
             className="max-w-full  rounded-xl object-cover"
           />
         </div>
 
-        {/* Text Second on Mobile */}
         <div className="w-full lg:w-1/2 text-left order-2 lg:order-1">
           <h1 className="text-white text-[1.8rem] sm:text-[2rem] md:text-[2.2rem] lg:text-[2.4rem] leading-snug">
             Driving exponential digital growth for your brand with our data & AI driven marketing strategies

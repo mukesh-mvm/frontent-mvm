@@ -4,7 +4,7 @@ import MainServices from './MainServices';
 function MobileAdvertising() {
   const data = {
     title: "Mobile Advertising",
-    img: "/images/mobile.png",
+    img: "/images/mobile.webp",
     points: [
       {
         heading: "What is Mobile Advertising?",

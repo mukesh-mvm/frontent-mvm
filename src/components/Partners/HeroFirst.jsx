@@ -2,7 +2,7 @@
 import Link from 'next/link'
 export default function HeroFirst({ herofirst }) {
   return (
-    <div className="w-full flex flex-col items-center gap-6 px-4 py-6">
+    <div className="w-full flex flex-col items-center gap-6 px-1 lg:px-4 py-6">
       {herofirst.map((slide, index) => (
         <div
           key={index}

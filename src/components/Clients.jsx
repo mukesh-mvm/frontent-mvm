@@ -1,22 +1,21 @@
 function Clients() {
   const clientImages = [
-    "/images/client8.png",
+    "/images/client8.webp",
     "/images/client2.webp",
-    "/images/client6.png",
-    "/images/client4.png",
-    "/images/client5.jfif",
-    "/images/client7.png",
-    "/images/client1.png",
+    "/images/client6.webp",
+    "/images/client4.webp",
+    "/images/client5.webp",
+    "/images/client7.webp",
+    "/images/client1.webp",
   ];
 
   return (
-    <div className="bg-[#141313]">
+    <div className="bg-[#272626]">
       <div className="max-w-6xl mx-auto px-2 py-10">
         <h2 className="text-4xl font-bold underline text-center text-white mb-8">
           Our Clients
         </h2>
 
-        {/* Masonry columns */}
         <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-5 space-y-5">
           {clientImages.map((image, index) => {
             const largeHeight =

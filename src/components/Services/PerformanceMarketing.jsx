@@ -4,7 +4,7 @@ import MainServices from './MainServices';
 function PerformanceMarketing() {
   const data = {
     title: "Performance Marketing",
-    img: "/images/performance_marketing.png",
+    img: "/images/performance_marketing.webp",
     points: [
       {
         heading: "What is Performance Marketing?", 

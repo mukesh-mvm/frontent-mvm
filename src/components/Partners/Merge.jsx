@@ -6,7 +6,7 @@ function Merge({ slides ,pros }) {
   return (
     <div className="bg-[#141313]">
       <hr />
-      <div className="w-[90%] flex flex-col lg:flex-row mx-auto  justify-center items-center px-4 lg:px-10 ">
+      <div className="w-[90%] flex flex-col lg:flex-row mx-auto  justify-center items-center  px-1 lg:px-10 ">
         <div className="w-full lg:w-[60%]">
           <HeroFirst herofirst={slides} />
         </div>

@@ -3,10 +3,10 @@ import Merge from "../Merge";
 function FlexiLoans() {
   const slides = [
     {
-      image: "/images/flexi.png",
+      image: "/images/flexi.webp",
       offer: "Get hassle free loans within 48 hours",
-      logo: "/images/flexiloan.jfif",
-      benifirst:'/images/flexii.jfif',
+      logo: "/images/flexiloan.webp",
+      benifirst:'/images/flexii.webp',
       benisec:'/images/flex.png',
       keydesc: `Flexiloans offers, no collateral loans to MSME within 48 hours. These loans offer flexible tenure of 12 to 36 months with affordable interest rates starting from only 12% per year.-
 The loan application is also simple with just three simple steps, and not to mention completely digital. All these perks ensure that clients don’t run into any cash flow problems or any other financial strain. `,

@@ -4,7 +4,7 @@ import MainServices from './MainServices';
 function Seo() {
   const data = {
     title: "SEO",
-    img: "/images/seo.jfif",
+    img: "/images/seo.webp",
     points: [
       {
         heading: "What is SEO?",

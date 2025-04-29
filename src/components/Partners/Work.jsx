@@ -6,52 +6,54 @@ import Link from "next/link";
 
 const workData = [
   {
-    image: "/images/bajaj.png",
-    title: "Bajaj Finserv",
+    image: "/images/bajaj.webp",
+    title: "Personal Loan",
     link: "/bajajfinserv",
     description:
       "Want a personal loan that charges low interest? With Bajaj Finserv’s personal loan, India’s best lending partners can guide in an online, quick and hassle free process.",
   },
   {
-    image: "/images/tata.png",
-    title: "Tata Neucard",
+    image: "/images/tata.webp",
+    title: "Credit Card",
     link: "/tataneu",
     description:
       "With Tata Neu HDFC credit card, save up to 10% across all our partner brands. And enjoy unmatched privileges powered by RuPay/Visa.  ",
   },
   {
-    image: "/images/flexi.png",
-    title: "Flexi Loans",
-    link: "/flexiloans",
-    description:
-      "Get instant access to flexible personal loans with low interest, minimal documentation, and quick approvals—tailored to meet your needs, anytime and anywhere in India.",
-  },
-  {
-    image: "/images/money.png",
-    title: "Money Control",
-    link: "/moneycontrol",
-    description:
-      "Get quick personal loans with Moneycontrol—easy online process, fast approval, minimal documents, and attractive interest rates tailored for professionals.",
-  },
-  {
-    image: "/images/cars.png",
-    title: "Cars24",
+    image: "/images/cars.webp",
+    title: "Buy/Sell Used Cars",
     link: "/cars24",
 
     description:
       "Sell your car, at the best price with ease. Instant online valuation, doorstep inspection, hassle-free RC transfer, loan & insurance support.",
   },
   {
-    image: "/images/myntra.png",
-    title: "Myntra",
+    image: "/images/flexi.webp",
+    title: "Business Loan",
+    link: "/flexiloans",
+    description:
+      "Get instant access to flexible personal loans with low interest, minimal documentation, and quick approvals—tailored to meet your needs, anytime and anywhere in India.",
+  },
+  {
+    image: "/images/myntra.webp",
+    title: "Online Fashion Store",
     link: "/myntra",
 
     description:
       "Shop the latest fashion with Myntra—enjoy great deals, top brands, easy returns, and a seamless shopping experience all in one place.",
   },
   {
-    image: "/images/indifi.png",
-    title: "Indifi",
+    image: "/images/money.webp",
+    title: "Personal Loan",
+    link: "/moneycontrol",
+    description:
+      "Get quick personal loans with Moneycontrol—easy online process, fast approval, minimal documents, and attractive interest rates tailored for professionals.",
+  },
+ 
+ 
+  {
+    image: "/images/indifi.webp",
+    title: "Business Loan",
     link: "/indifi",
     description:
       "Get fast and flexible business loans with Indifi—tailored solutions, minimal paperwork, and quick approvals to help your business grow with ease.",
@@ -86,16 +88,14 @@ export default function WorkCarousel() {
 
   
   return (
-    <div id="partners" className="py-10 bg-[#323336] text-white text-center">
+    <div id="partners" className="py-10 bg-[#323336] min-h-screen text-white text-center">
     <h2 className="text-4xl font-bold mb-6 underline">Our Partners</h2>
   
     <div className=" relative max-w-6xl mx-auto px-4 ">
       <Slider {...settings}>
         {workData.map((work, index) => (
           <div key={index} className="p-4">
-            {/* Full-height Card with Fixed Button */}
-            <div className="bg-[#414247] rounded-lg p-6 h-[500px] flex flex-col transition duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-[#505155]">
-              {/* Image */}
+            <div className="bg-[#414247] rounded-lg p-6 h-[508px] flex flex-col transition duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-[#505155]">
               <div className="bg-white  overflow-hidden mb-4">
                 <img
                   src={work.image}
@@ -104,7 +104,6 @@ export default function WorkCarousel() {
                 />
               </div>
   
-              {/* Title + Description */}
               <h4 className="text-2xl font-bold mb-2">{work.title}</h4>
               <div className="flex-grow overflow-y-auto pr-1 text-left">
                 <p className="text-base">{work.description}</p>

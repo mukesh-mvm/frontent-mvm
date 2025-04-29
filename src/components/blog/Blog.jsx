@@ -4,15 +4,15 @@ import React from 'react';
 function Blog() {
   const blogData = [
     {
-      image: "/images/work1.png",
-      title: "New Blog Post",
+      image: "/images/work1.webp",
+      title: "Impact of Ai",
     },
     {
-      image: "/images/work2.png",
+      image: "/images/work2.webp",
       title: "E-commerce",
     },
     {
-      image: "/images/blog.jpg",
+      image: "/images/blog.webp",
       title: "Sugar is bitter",
     }
   ];
