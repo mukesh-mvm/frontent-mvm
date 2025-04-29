@@ -4,7 +4,7 @@ function MainServices({ data }) {
   return (
     <>
       <div className="bg-black text-white py-10 px-4">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-violet-400 mb-8 px-2">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center underline  text-violet-400 mb-8 px-2">
           {data.title}
         </h1>
 
