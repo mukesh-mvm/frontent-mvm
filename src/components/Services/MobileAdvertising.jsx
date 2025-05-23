@@ -9,22 +9,22 @@ function MobileAdvertising() {
       {
         heading: "What is Mobile Advertising?",
         description:
-          "We define your brand's unique value in the market and position it to resonate with your target audience. Our strategies ensure long-term brand loyalty and differentiation.",
+          "Mobile Advertising is a form of advertising that appears mainly on mobile devices like smartphones & tablets.",
       },
       {
-        heading: "Tools used for Mobile Advertising",
+        heading: "What are some tools for Mobile Advertising?",
         description:
-          "We develop and execute strategic campaigns to build awareness, engage customers, and grow your brand's visibility across all major platforms.",
+          "Some common tools for mobile advertising, include Google Ads, Appsflyer and Airship. Through these tools, businesses can reach their target demographics effectively.",
       },
       {
         heading: "Types of Campaign Categories",
         description:
-          "We develop and execute strategic campaigns to build awareness, engage customers, and grow your brand's visibility across all major platforms.",
+          "The common campaign categories for Mobile Advertising include gaming, BFSI and automobiles.",
       },
       {
         heading: "Impact of Mobile Advertising", 
         description:
-          "We develop and execute strategic campaigns to build awareness, engage customers, and grow your brand's visibility across all major platforms.",
+          "Mobile Advertising is cost-effective and helps businesses to create personalised advertising strategies.",
       },
     ],
   };

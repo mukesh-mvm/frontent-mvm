@@ -8,25 +8,21 @@ function ContentWriting() {
     points: [
       {
         heading: "What is Content Writing?",
-        description: `Content Writing refers to a long term plan for building, establishing and promoting brands. Its end goal is to establish a positive brand image and build brand equity. 
+        description: `Content Marketing is a strategy used to engage with the target audience through useful and relevant content. 
+ 
 `,
       },
       {
-        heading: "Tools used for Brand Marketing",
-        description: `Branding tools help to establish and maintain a cohesive brand identity. They often provide useful insights that improve overall brand performance. Some examples include:
-Ahrefs , search engine marketing
+        heading: "What are some tools for Content Marketing",
+        description: `Some common tools for Content Marketing include Trello, WordPress and BuzzSumo. These tools ensure improved visibility. 
 `,
       },
       {
-        heading: "Types of Campaign Categories",
+        heading: "Impact of Content Marketing?",
         description:
-          "We develop and execute strategic campaigns to build awareness, engage customers, and grow your brand's visibility across all major platforms.",
+          "Content Marketing has several advantages, such as effective SEO, more sales and audience engagement. ",
       },
-      {
-        heading: "Impact of Brand Marketing",
-        description:
-          "We develop and execute strategic campaigns to build awareness, engage customers, and grow your brand's visibility across all major platforms.",
-      },
+     
     ],
   };
 

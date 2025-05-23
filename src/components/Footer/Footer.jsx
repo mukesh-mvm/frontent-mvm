@@ -96,14 +96,14 @@ const Footer = () => {
 </footer>
 
       <footer className="bg-black text-gray-300 flex flex-col md:flex-row justify-between items-center px-6 py-4 border-t border-gray-700">
-        <div className="flex items-center gap-4">
+        <Link href="/" className="flex items-center gap-4">
           <img
             src="/images/logo.webp"
             alt="MVM logo"
             className="w-16 h-16 object-contain"
           />
           <p className="text-md">MVM Business Services</p>
-        </div>
+        </Link>
         <p className="text-sm mt-2 md:mt-0">
           &copy; {new Date().getFullYear()} All rights reserved.
         </p>

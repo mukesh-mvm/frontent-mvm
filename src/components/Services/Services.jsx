@@ -1,13 +1,8 @@
 "use client";
 
-import { motion, useAnimation } from "framer-motion";
-import { useEffect, useState } from "react";
 import Link from "next/link";
 
 function Services() {
-  const [isInView, setIsInView] = useState(false);
-  const controls = useAnimation();
-
   const servicesData = [
     {
       title: "Brand Marketing",
@@ -59,48 +54,32 @@ function Services() {
     },
   ];
 
-  const handleScroll = () => {
-    const cards = document.querySelectorAll(".card");
-    cards.forEach((card) => {
-      const cardTop = card.getBoundingClientRect().top;
-      if (cardTop < window.innerHeight && cardTop > 0) {
-        setIsInView(true);
-      } else {
-        setIsInView(false);
-      }
-    });
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <div className="bg-gray-200 max-w-full mx-auto text-black py-8 px-2 text-center" id="services">
-      <h1 className="text-4xl font-bold underline mb-10">Our Services</h1>
-
+    <div
+      className="bg-gray-200 max-w-full mx-auto text-black py-4 px-2 text-center"
+      id="services"
+    >
+      <h2 className="text-4xl font-bold underline mb-8">Our Services</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
         {servicesData.map((service, index) => (
-          <motion.div
+          <div
             key={index}
-            className="card flex flex-col justify-between bg-blue-100 p-6 rounded-xl text-center shadow-md border-2 border-transparent hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-b hover:from-gray-100 hover:to-gray-200 hover:border-black/20 transition-all duration-300 min-h-[320px]"
-            initial={{ opacity: 0, y: 50 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-            transition={{ duration: 0.6 }}
+            className="card flex flex-col justify-between bg-blue-100 p-4 rounded-xl text-center shadow-md border-2 border-transparent hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-b hover:from-gray-100 hover:to-gray-200 hover:border-black/20 transition-all duration-300 min-h-[320px]"
           >
             <div>
-              <h4 className="text-2xl font-bold underline mb-3">{service.title}</h4>
-              <p className="text-base text-gray-700 leading-relaxed">{service.description}</p>
+              <h4 className="text-xl font-bold underline mb-2">
+                {service.title}
+              </h4>   
+              <p className="text-base text-gray-700 leading-relaxed">
+                {service.description}
+              </p>
             </div>
-
             <Link href={service.href}>
-              <button className="mt-2 cursor-pointer border-2 border-blue-600 text-blue-700 font-semibold px-4 py-2 rounded-full hover:bg-blue-800 hover:text-white transition duration-300">
+              <button className="cursor-pointer border-2 border-blue-600 text-blue-700 font-semibold px-4 py-2 rounded-full hover:bg-blue-800 hover:text-white transition duration-300">
                 Read More
               </button>
             </Link>
-          </motion.div>
+          </div>
         ))}
       </div>
     </div>

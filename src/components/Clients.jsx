@@ -11,7 +11,7 @@ function Clients() {
 
   return (
     <div className="bg-[#272626]">
-      <div className="max-w-6xl mx-auto px-2 py-10">
+      <div className="max-w-6xl mx-auto  px-10 lg:px-2 py-10 ">
         <h2 className="text-4xl font-bold underline text-center text-white mb-8">
           Our Clients
         </h2>

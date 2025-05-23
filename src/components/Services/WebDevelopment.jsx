@@ -7,26 +7,21 @@ function WebDevelopment() {
     img: "/images/web.webp",
     points: [
       {
-        heading: "What is Brand Marketing?",
+        heading: "What is Web Development?",
         description:
-          `Brand Marketing refers to a long term plan for building, establishing and promoting brands. Its end goal is to establish a positive brand image and build brand equity. 
+          `Web Development is the process that’s used to build and maintain websites or applications. Steps involved include planning, design, development, testing and maintenance.  
 `,
       },
       {
-        heading: "Tools used for Brand Marketing",
-        description:`Branding tools help to establish and maintain a cohesive brand identity. They often provide useful insights that improve overall brand performance. Some examples include:
-Ahrefs , search engine marketing
+        heading: "What are some common tools for Web Development? ",
+        description:`Web Development can be of different types, like version control, responsive design, front end development and back end development. The most popular ones today – GitHub, Figma and Flutter.   
 `
       },
-      {
-        heading: "Types of Campaign Categories",
-        description:
-          "We develop and execute strategic campaigns to build awareness, engage customers, and grow your brand's visibility across all major platforms.",
-      },
+     
       {
         heading: "Impact of Brand Marketing",
         description:
-          "We develop and execute strategic campaigns to build awareness, engage customers, and grow your brand's visibility across all major platforms.",
+          "Web Development is extremely useful in today’s digital world. It promotes economic development, encourages international connectivity, improves automation, and facilitates education and innovation.",
       },
     ],
   };

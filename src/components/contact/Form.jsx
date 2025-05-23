@@ -12,7 +12,8 @@ export default function Form() {
             <h4 className="text-gray-400 font-semibold">Contact us</h4>
             <h2 className="text-4xl font-bold">Get in touch</h2>
             <p className="text-gray-400 text-[18px]">
-            Let’s build your brand’s digital success story together. Reach out to MVM for innovative marketing strategies powered by data, creativity, and performance.            </p>
+            Want to make an impactful and compelling brand? We've got you covered. Contact us for any enquiries
+     </p>
 
             <div className="space-y-4 text-gray-300">
              

@@ -6,6 +6,13 @@ import Link from "next/link";
 
 const workData = [
   {
+    image: "/images/abhiloans.jpg",
+    title: "Loan",
+    link: "/abhiloan",
+    description:
+      "Your reliable resource for immediate financial assistance. When you need money most, you can get it quickly and easily without having to provide any documentation. ",
+  },
+  {
     image: "/images/bajaj.webp",
     title: "Personal Loan",
     link: "/bajajfinserv",
@@ -57,6 +64,24 @@ const workData = [
     link: "/indifi",
     description:
       "Get fast and flexible business loans with Indifi—tailored solutions, minimal paperwork, and quick approvals to help your business grow with ease.",
+  },
+
+
+  {
+    image: "/images/tvs logo.webp",
+    title: "Sporty Bikes",
+    link: "/tvsmotor",
+    description:
+      "Want a bike with sporty designs and value for money? With TVS, get all that and more without breaking the bank",
+  },
+
+
+  {
+    image: "/images/v3carslogo.jfif",
+    title: "Sell Used Cars",
+    link: "/v3car",
+    description:
+      "Car sales made hassle free At V3 Cars, sell your cars quickly and with no hassle. Click to know more",
   },
 ];
 

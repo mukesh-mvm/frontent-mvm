@@ -7,25 +7,21 @@ function Seo() {
     img: "/images/seo.webp",
     points: [
       {
-        heading: "What is SEO?",
+        heading: "What is Search Engine Optimisation?",
         description:
-          "We define your brand's unique value in the market and position it to resonate with your target audience. Our strategies ensure long-term brand loyalty and differentiation.",
+          "SEO, or Search Engine Optimisation, is a digital marketing strategy that is used to improve the ranking of a business on Google’s Search Engine Results Page [SERPs].",
       },
       {
-        heading: "Tools used for SEO",
+        heading: "What are some tools for Search Engine Optimisation?",
         description:
-          "We develop and execute strategic campaigns to build awareness, engage customers, and grow your brand's visibility across all major platforms.",
+          "Some common tools for Search Engine Optimisation include Semrush, Ahrefs, Yoast and Mangools. These tools provide businesses with the best SEO practices.",
       },
       {
-        heading: "Types of Campaign Categories",
+        heading: "Impact of Search Engine Optimisation",
         description:
-          "We develop and execute strategic campaigns to build awareness, engage customers, and grow your brand's visibility across all major platforms.",
+          "SEO gets more traffic and views to a business’ website [the higher the rank, the more traffic it gets]. This means more leads, which can then be converted to sales.  ",
       },
-      {
-        heading: "Impact of Social SEO", 
-        description:
-          "We develop and execute strategic campaigns to build awareness, engage customers, and grow your brand's visibility across all major platforms.",
-      },
+    
     ],
   };
 

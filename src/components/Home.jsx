@@ -37,7 +37,7 @@ function Home() {
         </div>
 
         <div className="w-full lg:w-1/2 text-left order-2 lg:order-1">
-          <h1 className="text-white text-[1.8rem] sm:text-[2rem] md:text-[2.2rem] lg:text-[2.4rem] leading-snug">
+            <h1 className="text-white text-[1.6rem]  md:text-[1.8rem] lg:text-[2.0rem] leading-snug hyphens-auto">
             Driving exponential digital growth for your brand with our data & AI driven marketing strategies
           </h1>
           <div

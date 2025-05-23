@@ -10,21 +10,17 @@ function PerformanceMarketing() {
         heading: "What is Performance Marketing?", 
         description:
           "We define your brand's unique value in the market and position it to resonate with your target audience. Our strategies ensure long-term brand loyalty and differentiation.",
-      },
+      }, 
       {
-        heading: "Tools used for Performance Marketing",
+        heading: "Types of campaign categories",
         description:
-          "We develop and execute strategic campaigns to build awareness, engage customers, and grow your brand's visibility across all major platforms.",
+          "Campaign categories for performance marketing include CPC [cost per click], CPL [cost per lead], CPI [cost per install], CPV [cost per visit] and CPM [cost per impression]. ",
       },
-      {
-        heading: "Types of Campaign Categories",
-        description:
-          "We develop and execute strategic campaigns to build awareness, engage customers, and grow your brand's visibility across all major platforms.",
-      },
+     
       {
         heading: "Impact of Perfomance Marketing",
         description:
-          "We develop and execute strategic campaigns to build awareness, engage customers, and grow your brand's visibility across all major platforms.",
+          "Effective performance marketing gives businesses measurable and effective results. It boosts the overall return on investment [ROI].",
       },
     ],
   };

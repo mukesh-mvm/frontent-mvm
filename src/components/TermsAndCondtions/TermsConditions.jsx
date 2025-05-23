@@ -3,7 +3,7 @@ function TermsConditions() {
     <>
       <div
         className="bg-cover bg-center h-[70vh] w-full flex justify-center items-center"
-        style={{ backgroundImage: "url('/images/policy.jpg')" }}
+        style={{ backgroundImage: "url('/images/policy.webp')" }}
       >
         <div className="bg-black bg-opacity-80 shadow-lg rounded-lg p-6 max-w-lg w-4/5 text-center">
           <h1 className="text-4xl font-bold text-white mb-4">
