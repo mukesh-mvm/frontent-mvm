@@ -17,7 +17,7 @@ export default function HeroSecond({ herosecond }) {
             <img
               src={slide.image}
               alt="Logo"
-              className="max-h-24 w-auto mx-auto block"
+              className="h-22 w-auto mx-auto block"
             />
 
             <div className="flex flex-col gap-2 text-left">

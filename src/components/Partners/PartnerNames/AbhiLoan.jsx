@@ -3,7 +3,7 @@ import Merge from "../Merge";
 function AbhiLoan() {
   const slides = [
     { 
-      image: "/images/abhiloans.jpg",
+      image: "/images/abhiloans.webp",
       offer: "Quick loans in only 10 seconds",
       logo: "/images/abhi_banner.jfif",
       keydesc: ` Abhi Loans is a rapidly expanding, technology driven lending platform in India that aims to provide underserved and new to credit (NTC) people with quick, easy personal and business loans. Abhi Loans makes borrowing quick, easy, and safe, whatever your situation—whether you're a small company owner, freelance worker, or someone in dire need of money.

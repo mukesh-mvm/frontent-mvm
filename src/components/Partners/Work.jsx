@@ -5,13 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 
 const workData = [
-  {
-    image: "/images/abhiloans.jpg",
-    title: "Loan",
-    link: "/abhiloan",
-    description:
-      "Your reliable resource for immediate financial assistance. When you need money most, you can get it quickly and easily without having to provide any documentation. ",
-  },
+  
   {
     image: "/images/bajaj.webp",
     title: "Personal Loan",
@@ -82,6 +76,30 @@ const workData = [
     link: "/v3car",
     description:
       "Car sales made hassle free At V3 Cars, sell your cars quickly and with no hassle. Click to know more",
+  },
+  {
+    image: "/images/dbslogo.webp",
+    title: "Savings Account",
+    link: "/dbssavingaccount",
+    description:"Need funds fast? Get instant personal loans with DBS Digibank. 100% digital, no paperwork, quick approval, and great rates—ideal for emergencies, travel, education."  },
+  {
+    image: "/images/cibillogo.webp",
+    title: "Credit Score",
+    link: "/cibil",
+    description:"Understand your CIBIL score—it reflects your credit reliability and impacts your chances of getting loans or credit cards, securing better financial opportunities."  },
+  {
+    image: "/images/abhiloans.webp",
+    title: "Loan",
+    link: "/abhiloan",
+    description:
+      "Your reliable resource for immediate financial assistance. When you need money most, you can get it quickly and easily without having to provide any documentation. ",
+  },
+  {
+    image: "/images/ajiologo.webp",
+    title: "Ecommerce",
+    link: "/ajio",
+    description:
+      "Upgrade your wardrobe with AJIO! Discover trending styles, top quality, and great deals. From work to weekends, shop size-inclusive fashion with fast returns and fresh arrivals.",
   },
 ];
 
