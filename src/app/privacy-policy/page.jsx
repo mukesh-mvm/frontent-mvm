@@ -2,15 +2,15 @@ import Policy from "@/components/Policy"
 
 
 export const metadata = {
-  title: "MVM Business Services | Data-Driven Digital Marketing Agency",
-  description: "Grow your brand with MVM Business Services – experts in digital marketing, SEO, social media, and web development.",
+  title: "MVMB Privacy Policy",
+  description: "Learn how MVMB collects, stores, and protects your data. We respect your privacy and keep it secure.",
   metadataBase: new URL("https://mvmbs.com"),
   alternates: {
     canonical: "./",
   },
   robots: {
-    index: false, // Disables indexing
-    follow: false, // Prevents following links
+    index: false,
+    follow: false, 
   },
 };
 

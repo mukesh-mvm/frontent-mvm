@@ -1,15 +1,15 @@
 import AffiliateMarketing from "@/components/Services/AffiliateMarketing"
 
 export const metadata = {
-  title: "MVM Business Services | Data-Driven Digital Marketing Agency",
-  description: "Grow your brand with MVM Business Services – experts in digital marketing, SEO, social media, and web development.",
+  title: "Affiliate Marketing for Scalable Revenue",
+  description: "Tap into top affiliate networks to drive results. Boost ROI with smart, performance-based marketing strategies.",
   metadataBase: new URL("https://mvmbs.com"),
   alternates: {
     canonical: "./",
   },
   robots: {
-    index: false, // Disables indexing
-    follow: false, // Prevents following links
+    index: false, 
+    follow: false, 
   },
 };
   

@@ -1,16 +1,17 @@
 import WebDevelopment from "@/components/Services/WebDevelopment"
 
 export const metadata = {
+  title:"Website Development That Drives Growth",
   description:
-    "MVM Business Services is a data-driven digital marketing agency helping brands grow through innovative strategies, engaging content, and performance-focused campaigns. We specialize in brand building, SEO, social media, affiliate marketing, and web development.",
+    "Build fast, scalable websites that convert. Our dev team creates digital experiences your customers love.",
   metadataBase: new URL("https://mvmbs.com"),
   alternates: {
     canonical: "./",
   },
 
   robots: {
-    index: false, // Disables indexing
-    follow: false, // Prevents following links
+    index: false,
+    follow: false, 
   },
 };
 

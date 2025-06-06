@@ -9,8 +9,8 @@ export const metadata = {
     canonical: "./",
   },
   robots: {
-    index: false, // Disables indexing
-    follow: false, // Prevents following links
+    index: false, 
+    follow: false, 
   },
 };
 

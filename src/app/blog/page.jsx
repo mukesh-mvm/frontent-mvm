@@ -1,15 +1,15 @@
 import Blog from "@/components/blog/Blog"
 
 export const metadata = {
-  title: "MVM Business Services | Data-Driven Digital Marketing Agency",
-  description: "Grow your brand with MVM Business Services – experts in digital marketing, SEO, social media, and web development.",
+  title: "Digital Marketing Insights & Expert Tips",
+  description: "Stay ahead with expert blogs on SEO, branding, paid ads, and social media. Actionable insights to boost your business.",
   metadataBase: new URL("https://mvmbs.com"),
   alternates: {
     canonical: "./",
   },
   robots: {
-    index: false, // Disables indexing
-    follow: false, // Prevents following links
+    index: false, 
+    follow: false, 
   },
 };
 

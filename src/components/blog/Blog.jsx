@@ -28,14 +28,14 @@ function Blog() {
         >
           <div className="h-56 w-full overflow-hidden rounded-t-lg">
             <img
-              src={blog.image}
-              alt={blog.title}
+              src={blog?.image}
+              alt={blog?.title}
               className="h-full w-full object-cover"
             />
           </div>
           <div className="p-6 text-center">
-            <h2 className="text-2xl font-bold text-white mb-4">{blog.title}</h2>
-            <Link  href={`/blog/${blog.title.replace(/\s+/g, '-').toLowerCase()}`}>
+            <h2 className="text-2xl font-bold text-white mb-4">{blog?.title}</h2>
+            <Link  href={`/blog/${blog?.title?.replace(/\s+/g, '-')?.toLowerCase()}`}>
               <button className="bg-yellow-500 cursor-pointer text-black px-6 py-2 rounded-full hover:bg-yellow-600 transition-colors">
                 View More
               </button>

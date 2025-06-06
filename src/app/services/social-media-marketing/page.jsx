@@ -1,15 +1,15 @@
 import SocialMediaMarketing from '@/components/Services/SocialMediaMarketing'
 
 export const metadata = {
-  title: "MVM Business Services | Data-Driven Digital Marketing Agency",
-  description: "Grow your brand with MVM Business Services – experts in digital marketing, SEO, social media, and web development.",
+  title: "Social Media That Drives Real Engagement",
+  description: "From strategy to growth—turn followers into customers with expert-led social media marketing campaigns.",
   metadataBase: new URL("https://mvmbs.com"),
   alternates: {
     canonical: "./",
   },
   robots: {
-    index: false, // Disables indexing
-    follow: false, // Prevents following links
+    index: false, 
+    follow: false, 
   },
 };
 

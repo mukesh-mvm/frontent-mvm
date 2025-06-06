@@ -1,15 +1,15 @@
 import Seo from "@/components/Services/Seo"
 
 export const metadata = {
-  title: "MVM Business Services | Data-Driven Digital Marketing Agency",
-  description: "Grow your brand with MVM Business Services – experts in digital marketing, SEO, social media, and web development.",
+  title: "SEO Services That Rank & Convert",
+  description: "Climb Google rankings and get traffic that converts. Our SEO experts ensure your brand is always found first.",
   metadataBase: new URL("https://mvmbs.com"),
   alternates: {
     canonical: "./",
   },
   robots: {
-    index: false, // Disables indexing
-    follow: false, // Prevents following links
+    index: false, 
+    follow: false, 
   },
 };
 

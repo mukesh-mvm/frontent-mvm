@@ -73,7 +73,7 @@ function ServicesHome() {
               "Startups: On a tight budget, they want to increase brand recognition and provide quality leads.",
               "Local Service Providers: Seeking to use social media and optimized local search to draw in local clients.",
               "Corporates and enterprises require complete digital solutions at scale and data-driven initiatives.",
-            ].map((item, idx) => (
+            ]?.map((item, idx) => (
               <div key={idx} className="flex items-center gap-3">
                 <FaRegCircleCheck className="text-orange-400 text-xl md:text-2xl" />
                 <span className="text-sm md:text-base">{item}</span>
@@ -106,17 +106,17 @@ function ServicesHome() {
               src: "https://cdn-icons-png.freepik.com/256/17247/17247423.png?ga=GA1.1.1414107002.1745826214&semt=ais_hybrid",
               label: "Optimize",
             },
-          ].map((item, idx) => (
+          ]?.map((item, idx) => (
             <div key={idx} className="flex flex-col items-center">
               <div className="w-32 md:w-48 h-32 md:h-48 rounded-full bg-white overflow-hidden flex justify-center items-center mb-2">
                 <img
-                  src={item.src}
-                  alt={item.label}
+                  src={item?.src}
+                  alt={item?.label}
                   className="w-20 md:w-32 h-20 md:h-32 object-contain"
                 />
               </div>
               <p className="text-lg md:text-xl font-semibold text-center">
-                {item.label}
+                {item?.label}
               </p>
             </div>
           ))}

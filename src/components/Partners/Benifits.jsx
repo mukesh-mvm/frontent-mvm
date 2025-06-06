@@ -6,9 +6,8 @@ export default function Benifits({ benifits, pros }) {
     <div className="w-full flex justify-center ">
       <div className="flex flex-col lg:flex-row gap-4 w-full max-w-6xl items-stretch">
         
-        {/* Left Image */}
-        <div className="w-full lg:w-1/4 flex items-center justify-center   p-2 min-h-[400px]">
-          <Link href={benifits[0].site} target="_blank" className="block w-full h-full">
+       <div className="w-full lg:w-1/4 flex items-center justify-center   p-2 min-h-[400px]">
+          <Link href={benifits[0].site} target="_blank"   rel="noopener" className="block w-full h-full">
             <img
               src={benifits[0].benifirst}
               alt="Left Banner"
@@ -17,7 +16,6 @@ export default function Benifits({ benifits, pros }) {
           </Link>
         </div>
 
-        {/* Middle Content */}
         <div
           className="flex-grow min-h-[400px] rounded-2xl shadow-2xl p-6 flex items-center justify-center relative bg-white"
           style={{
@@ -33,12 +31,12 @@ export default function Benifits({ benifits, pros }) {
             </h2>
 
             <ul className="list-disc list-outside text-blue-700 font-rubik text-lg lg:text-xl text-left px-4">
-              {pros.map((point, index) => (
+              {pros?.map((point, index) => (
                 <li key={index}>{point}</li>
               ))}
             </ul>
 
-            <Link href={benifits[0].site} target="_blank">
+            <Link href={benifits[0].site} target="_blank"  rel="noopener">
               <button className="bg-orange-600 cursor-pointer text-white px-6 py-2 rounded-lg font-medium hover:bg-orange-700 transition">
                 Know More
               </button>
@@ -46,9 +44,8 @@ export default function Benifits({ benifits, pros }) {
           </div>
         </div>
 
-        {/* Right Image */}
         <div className="w-full lg:w-1/4 flex items-center justify-center  p-2 min-h-[400px]">
-          <Link href={benifits[0].site} target="_blank" className="block w-full h-full">
+          <Link href={benifits[0].site} target="_blank"  rel="noopener" className="block w-full h-full">
             <img
               src={benifits[0].benisec}
               alt="Right Banner"

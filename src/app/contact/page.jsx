@@ -1,15 +1,14 @@
 import ContactHome from "@/components/contact/ContactHome"
 
 export const metadata = {
-  title: "MVM Business Services | Data-Driven Digital Marketing Agency",
-  description: "Grow your brand with MVM Business Services – experts in digital marketing, SEO, social media, and web development.",
+  title: "Contact MVMB – Digital Marketing in Noida",
+  description: "Visit our office in Noida Sector 62 or get in touch online. Let’s build your brand with data-driven digital strategies.",
   metadataBase: new URL("https://mvmbs.com"),
   alternates: {
     canonical: "./",
   },
   robots: {
-    index: false, // Disables indexing
-    follow: false, // Prevents following links
+    follow: false, 
   },
 };
 

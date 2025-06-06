@@ -2,15 +2,15 @@ import ServicesHome from "@/components/Services/ServicesHome";
 
 
 export const metadata = {
-  title: "MVM Business Services | Data-Driven Digital Marketing Agency",
-  description: "Grow your brand with MVM Business Services – experts in digital marketing, SEO, social media, and web development.",
+  title: "Digital Marketing Services That Deliver ROI",
+  description: "Explore ROI-focused marketing services—SEO, branding, performance ads, and more. Scale your business with proven strategies.",
   metadataBase: new URL("https://mvmbs.com"),
   alternates: {
     canonical: "./",
   },
   robots: {
-    index: false, // Disables indexing
-    follow: false, // Prevents following links
+    index: false, 
+    follow: false, 
   },
 };
 

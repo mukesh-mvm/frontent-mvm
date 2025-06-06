@@ -1,15 +1,15 @@
 import PerformanceMarketing from "@/components/Services/PerformanceMarketing"
 
 export const metadata = {
-  title: "MVM Business Services | Data-Driven Digital Marketing Agency",
-  description: "Grow your brand with MVM Business Services – experts in digital marketing, SEO, social media, and web development.",
+  title: "Performance Marketing That Fuels Sales",
+  description: "Data-driven performance marketing with guaranteed ROI. Get leads, sales, and measurable success across platforms.",
   metadataBase: new URL("https://mvmbs.com"),
   alternates: {
     canonical: "./",
   },
   robots: {
-    index: false, // Disables indexing
-    follow: false, // Prevents following links
+    index: false, 
+    follow: false, 
   },
 };
 

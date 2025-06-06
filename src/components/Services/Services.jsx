@@ -26,7 +26,7 @@ function Services() {
       title: "Social Media Marketing",
       description:
         "We build interesting social media campaigns with very high engagement and high shareability. We ensure to build that social connect with audience through our social campaigns.",
-      href: "/services/social-media",
+      href: "/services/social-media-marketing",
     },
     {
       title: "Mobile Advertising",
@@ -61,20 +61,22 @@ function Services() {
     >
       <h2 className="text-4xl font-bold underline mb-8">Our Services</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-        {servicesData.map((service, index) => (
+        {servicesData?.map((service, index) => (
           <div
             key={index}
             className="card flex flex-col justify-between bg-blue-100 p-4 rounded-xl text-center shadow-md border-2 border-transparent hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-b hover:from-gray-100 hover:to-gray-200 hover:border-black/20 transition-all duration-300 min-h-[320px]"
           >
             <div>
               <h4 className="text-xl font-bold underline mb-2">
-                {service.title}
+                {service?.title}
               </h4>   
               <p className="text-base text-gray-700 leading-relaxed">
-                {service.description}
+                {service?.description}
               </p>
             </div>
-            <Link href={service.href}>
+            <Link href={service?.href}
+            aria-label={`Read more about ${service?.title || 'this service'}`}
+            >
               <button className="cursor-pointer border-2 border-blue-600 text-blue-700 font-semibold px-4 py-2 rounded-full hover:bg-blue-800 hover:text-white transition duration-300">
                 Read More
               </button>

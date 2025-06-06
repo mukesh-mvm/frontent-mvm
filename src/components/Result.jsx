@@ -1,16 +1,9 @@
 "use client";
-
-import { useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
 function Result() {
   const quoteRef = useRef(null);
-  const textRef=useRef(null)
-  const imageRef=useRef(null)
 
-  const isTextinView= useInView(textRef,{once:false})
-  const isImageinView= useInView(imageRef,{once:false})
-  
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -36,15 +29,18 @@ function Result() {
     <div className="py-4 px-6 bg-[#141313]">
   <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
 
-    <div className="w-full lg:w-1/2 flex justify-center order-1 lg:order-1">
-      <img
-        src="/images/result.webp"
-        alt="Results"
-        className="max-w-full rounded-xl object-cover"
-      />
-    </div>
+   <div className="w-full lg:w-1/2 flex justify-center order-1 lg:order-1">
+  <img
+    src="/images/result.webp"
+    alt="Results"
+    width={600}    
+    height={400}
+    className="max-w-full rounded-xl object-cover"
+  />
+</div>
 
-    {/* 📄 Text - Now on Right */}
+
+
     <div className="w-full lg:w-1/2 text-left order-2 lg:order-2">
       <h2 className="text-white text-[1.6rem] md:text-[1.8rem] lg:text-[2.0rem] leading-snug hyphens-auto ">
         At MVM we love making beautiful brand stories with our engaging content strategy, intelligent campaign implementation & optimization

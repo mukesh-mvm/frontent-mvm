@@ -1,15 +1,15 @@
 import BrandMarketing from "@/components/Services/BrandMarketing"
 
 export const metadata = {
-  title: "MVM Business Services | Data-Driven Digital Marketing Agency",
-  description: "Grow your brand with MVM Business Services – experts in digital marketing, SEO, social media, and web development.",
+  title: "Build a Powerful Brand That Converts",
+  description: "Create a brand people remember. From identity to strategy—we craft brands that drive loyalty and growth.",
   metadataBase: new URL("https://mvmbs.com"),
   alternates: {
     canonical: "./",
   },
   robots: {
-    index: false, // Disables indexing
-    follow: false, // Prevents following links
+    index: false, 
+    follow: false, 
   },
 };
 

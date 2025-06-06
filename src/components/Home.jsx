@@ -28,13 +28,16 @@ function Home() {
   return (
     <div className="py-8 px-8 bg-[#141313]">
       <div className="flex items-center justify-between gap-2 lg:gap-2   lg:px-2 flex-wrap lg:flex-nowrap ">
-        <div className="w-full lg:w-1/2 flex justify-center order-1 lg:order-2">
-          <img
-            src="/images/Home.webp"
-            alt="Home"
-            className="max-w-full  rounded-xl object-cover"
-          />
-        </div>
+       <div className="w-full lg:w-1/2 flex justify-center order-1 lg:order-2">
+  <img
+    src="/images/Home.webp"
+    alt="Home"
+    width={600}    
+    height={400}    
+    className="max-w-full rounded-xl object-cover"
+  />
+</div>
+
 
         <div className="w-full lg:w-1/2 text-left order-2 lg:order-1">
             <h1 className="text-white text-[1.6rem]  md:text-[1.8rem] lg:text-[2.0rem] leading-snug hyphens-auto">

@@ -1,5 +1,4 @@
 import AbhiLoan from "@/components/Partners/PartnerNames/AbhiLoan";
-import BajajFinserv from "@/components/Partners/PartnerNames/BajajFinserv";
 
 export const metadata = {
   title: "MVM Business Services | Data-Driven Digital Marketing Agency",
@@ -9,8 +8,8 @@ export const metadata = {
     canonical: "./",
   },
   robots: {
-    index: false, // Disables indexing
-    follow: false, // Prevents following links
+    index: false, 
+    follow: false, 
   },
 };
 

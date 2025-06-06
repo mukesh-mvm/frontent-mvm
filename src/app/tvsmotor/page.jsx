@@ -1,4 +1,3 @@
-// import BajajFinserv from "@/components/Partners/PartnerNames/BajajFinserv";
 import TvsMotor from "@/components/Partners/PartnerNames/TvsMotor";
 
 export const metadata = {
@@ -9,8 +8,8 @@ export const metadata = {
     canonical: "./",
   },
   robots: {
-    index: false, // Disables indexing
-    follow: false, // Prevents following links
+    index: false, 
+    follow: false, 
   },
 };
 
