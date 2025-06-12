@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const workData = [
   {
@@ -17,13 +18,12 @@ const workData = [
     title: "Credit Card",
     link: "/tataneu",
     description:
-      "With Tata Neu HDFC credit card, save up to 10% across all our partner brands. And enjoy unmatched privileges powered by RuPay/Visa.  ",
+      "With Tata Neu HDFC credit card, save up to 10% across all our partner brands. And enjoy unmatched privileges powered by RuPay/Visa.",
   },
   {
     image: "/images/cars.webp",
     title: "Buy/Sell Used Cars",
     link: "/cars24",
-
     description:
       "Sell your car, at the best price with ease. Instant online valuation, doorstep inspection, hassle-free RC transfer, loan & insurance support.",
   },
@@ -38,7 +38,6 @@ const workData = [
     image: "/images/myntra.webp",
     title: "Online Fashion Store",
     link: "/myntra",
-
     description:
       "Shop the latest fashion with Myntra—enjoy great deals, top brands, easy returns, and a seamless shopping experience all in one place.",
   },
@@ -49,7 +48,6 @@ const workData = [
     description:
       "Get quick personal loans with Moneycontrol—easy online process, fast approval, minimal documents, and attractive interest rates tailored for professionals.",
   },
-
   {
     image: "/images/indifi.webp",
     title: "Business Loan",
@@ -57,7 +55,6 @@ const workData = [
     description:
       "Get fast and flexible business loans with Indifi—tailored solutions, minimal paperwork, and quick approvals to help your business grow with ease.",
   },
-
   {
     image: "/images/tvs logo.webp",
     title: "Sporty Bikes",
@@ -65,7 +62,6 @@ const workData = [
     description:
       "Want a bike with sporty designs and value for money? With TVS, get all that and more without breaking the bank",
   },
-
   {
     image: "/images/v3carslogo.webp",
     title: "Sell Used Cars",
@@ -92,7 +88,7 @@ const workData = [
     title: "Loan",
     link: "/abhiloan",
     description:
-      "Your reliable resource for immediate financial assistance. When you need money most, you can get it quickly and easily without having to provide any documentation. ",
+      "Your reliable resource for immediate financial assistance. When you need money most, you can get it quickly and easily without having to provide any documentation.",
   },
   {
     image: "/images/ajiologo.webp",
@@ -103,16 +99,37 @@ const workData = [
   },
 ];
 
+// Custom Arrow Components
+const CustomPrevArrow = ({ onClick }) => (
+  <button
+    className="absolute left-0 top-1/2 ml-[-16px] transform -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow hover:bg-gray-200"
+    onClick={onClick}
+  >
+    <FaArrowLeft className="text-black" />
+  </button>
+);
+
+const CustomNextArrow = ({ onClick }) => (
+  <button
+    className="absolute right-0 mr-[-16px] top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow hover:bg-gray-200"
+    onClick={onClick}
+  >
+    <FaArrowRight className="text-black" />
+  </button>
+);
+
 export default function WorkCarousel() {
   const settings = {
-    dots: true,
+    dots: false,
+    arrows: true,
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: false,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,
@@ -135,28 +152,25 @@ export default function WorkCarousel() {
       className="py-10 bg-[#323336] min-h-screen text-white text-center"
     >
       <h2 className="text-4xl font-bold mb-6 underline">Our Partners</h2>
-
-      <div className=" relative max-w-6xl mx-auto px-4 ">
+      <div className="relative max-w-6xl mx-auto px-4">
         <Slider {...settings}>
           {workData.map((work, index) => (
             <div key={index} className="p-4">
               <div className="bg-[#414247] rounded-lg p-6 h-[508px] flex flex-col transition duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-[#505155]">
-                <div className="bg-white  overflow-hidden mb-4">
+                <div className="bg-white overflow-hidden mb-4">
                   <img
-                    src={work?.image}
-                    alt={work?.title}
+                    src={work.image}
+                    alt={work.title} 
                     className="w-full h-[170px] object-cover"
                   />
                 </div>
-
-                <p className="text-2xl font-bold mb-2">{work?.title}</p>
+                <p className="text-2xl font-bold mb-2">{work.title}</p>
                 <div className="flex-grow overflow-y-auto pr-1 text-left">
-                  <p className="text-base">{work?.description}</p>
+                  <p className="text-base">{work.description}</p>
                 </div>
-
                 <div className="pt-4">
-                  <Link href={work?.link || "/"}>
-                    <button className="bg-blue-400 text-black cursor-pointer py-2 px-6 rounded hover:bg-blue-500 transition duration-300 ">
+                  <Link href={work.link || "/"}>
+                    <button className="bg-blue-400 text-black cursor-pointer py-2 px-6 rounded hover:bg-blue-500 transition duration-300">
                       Explore Now
                     </button>
                   </Link>

@@ -12,7 +12,7 @@ function Hire() {
           Contact Us
         </button>
       </Link>
-    </div>
+    </div> 
   );
 }
 
