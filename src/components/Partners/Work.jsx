@@ -97,6 +97,13 @@ const workData = [
     description:
       "Upgrade your wardrobe with AJIO! Discover trending styles, top quality, and great deals. From work to weekends, shop size-inclusive fashion with fast returns and fresh arrivals.",
   },
+  {
+    image: "/images/acklogo.webp",
+    title: "Car Insurance",
+    link: "/acko",
+    description:
+      "Skip the hussle with ACKO Car Insurance. Get instant, affordable coverage with a 100% digital process. Enjoy cashless repairs, quick claims, and add-ons like zero depreciation.",
+  },
 ];
 
 // Custom Arrow Components
@@ -161,7 +168,7 @@ export default function WorkCarousel() {
                   <img
                     src={work.image}
                     alt={work.title} 
-                    className="w-full h-[170px] object-cover"
+                    className="w-full h-[160px] object-cover"
                   />
                 </div>
                 <p className="text-2xl font-bold mb-2">{work.title}</p>
