@@ -15,7 +15,7 @@ export const metadata = {
 
 
 export async function generateStaticParams() {
-  return [{ slugName: "new-blog-post" },{ slugName: "e-commerce" },{ slugName: "sugar-is-bitter" }];
+  return [{ slugName: "impact-of-ai" },{ slugName: "e-commerce" },{ slugName: "sugar-is-bitter" }];
 }
 
 const page = async ({ params }) => {

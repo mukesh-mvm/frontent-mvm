@@ -104,6 +104,20 @@ const workData = [
     description:
       "Skip the hussle with ACKO Car Insurance. Get instant, affordable coverage with a 100% digital process. Enjoy cashless repairs, quick claims, and add-ons like zero depreciation.",
   },
+    {
+    image: "/images/ola logo.webp",
+    title: "Automobile",
+    link: "/olaelectric",
+    description:
+      "Ride into the future with the new Ola Electric Motorbike—where performance meets sustainability. Enjoy 150–200 km+ on a single charge, lightning-fast hypercharging.",
+  },
+    {
+    image: "/images/paisabazaarlogo.webp",
+    title: "Business Loan",
+    link: "/paisabazaar",
+    description:
+      "Need funds to grow your business? Get instant access to loan offers from 10+ top lenders—all in one place. Easy process, quick disbursal, and zero hassle.",
+  },
 ];
 
 // Custom Arrow Components
